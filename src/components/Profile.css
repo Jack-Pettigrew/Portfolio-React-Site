@@ -1,0 +1,50 @@
+img {
+    width: 75px;
+}
+
+.profile {
+    background-color: rgb(240, 237, 237);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 5px 5px;
+}
+
+.profile * {
+    padding-right: 2%;
+}
+
+.profile .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0.75%;
+}
+
+.profile .info * {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.profile .subtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile .subtitle * {
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+
+.profile .subtitle h3 {
+    transition: 0.5s;
+}
+
+.profile .subtitle h3:hover {
+    transform: rotate(5deg) scale(1.4);
+    transition: 0.5s;
+}
