@@ -1,10 +1,10 @@
 import './App.css';
 import Profile from './components/Profile';
 import FeaturedProjectViewer from './components/FeaturedProjectViewer';
+import Links from './components/Links';
 
 // styles
 import "./global.css"
-import Links from './components/Links';
 
 function App() {
   return (
