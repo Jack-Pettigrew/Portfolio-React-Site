@@ -3,6 +3,11 @@
     src: url('./fonts/Roboto-Regular.ttf');
 }
 
+@font-face {
+    font-family: Roboto-Light;
+    src: url('./fonts/Roboto-Light.ttf');
+}
+
 * {
     font-family: Roboto;
 }
