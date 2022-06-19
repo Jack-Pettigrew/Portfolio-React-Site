@@ -6,7 +6,6 @@
 }
 
 .featured .container {
-    position: relative;
     margin: 0 0 5px 5px;
     width: 50px;
     height: 300px;
@@ -19,10 +18,4 @@
     color: rgba(255, 255, 255, 1);
     width: 500px;
     transition: 1s;
-}
-
-.featured .container .project-title {
-    position: absolute;
-    top: 50%;
-    left: 5%;
 }

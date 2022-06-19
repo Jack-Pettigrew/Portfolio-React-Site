@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { FaGithub, FaItchIo } from "react-icons/fa"
 
 // styles

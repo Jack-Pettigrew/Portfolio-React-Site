@@ -5,7 +5,7 @@ export default function Profile() {
   return (
     <div className="profile">
       <div className="info">
-        <img src={image} />
+        <img src={image} alt="Profile Picture" />
         <h2>Jack Pettigrew</h2>
       </div>
       <div className="subtitle">

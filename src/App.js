@@ -1,19 +1,21 @@
-import './App.css';
-import Profile from './components/Profile';
-import FeaturedProjectViewer from './components/FeaturedProjectViewer';
-import Links from './components/Links';
-
 // styles
 import "./global.css"
+import './App.css';
+
+// componentss
 import SiteTitle from './components/SiteTitle';
 import Transition from './components/Transition';
+import FeaturedProjectViewer from './components/FeaturedProjectViewer';
 
 function App() {
   return (
     <div className="App">
       <SiteTitle />
       <Transition />
-      <p>Hello</p>
+      {/* <Profile /> */}
+      {/* <Links /> */}
+      <FeaturedProjectViewer />
+      {/* Univeristy/Personal/Polygonal project selectors */}
     </div>
   );
 }
