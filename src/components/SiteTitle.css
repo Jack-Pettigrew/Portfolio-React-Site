@@ -1,29 +1,13 @@
-.title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.title .name {
-    font-size: 5em;
-    margin: auto;
-}
-
-.hidden-rotated {
-    transform: rotateY(90deg);
-}
-
-.visible-rotated {
-    transform: rotateY(0deg);
-}
-
-/* .title {
+.overlayed {
     position: absolute;
     height: 100vh;
     width: 100vw;
     top: 0;
     left: 0;
+}
+
+.title {    
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,22 +18,18 @@
 
 .title .name {
     font-size: 5em;
-    margin: 10px 10px;
+    margin: 5px auto;
     animation: fadeIn 2s linear forwards;
 }
 
-.title .links .links-container .hidden-rotation {
+.hidden-rotated {
     transform: rotateY(90deg);
 }
 
-.title .links .links-container .rotated {
+.visible-rotated {
     transform: rotateY(0deg);
 }
 
-.title .links .links-container .rotated:hover {
-    transform: scale(1.2);
-    transition: 0.5s;
-}
 
 @keyframes fadeIn {
     from {
@@ -63,11 +43,10 @@
 
 @keyframes slide {
     from {
-        max-height:100vh;
+        height:100vh;
     }
 
     to {
-        max-height: 20vh;
+        height: 20vh;
     }
 }
- */

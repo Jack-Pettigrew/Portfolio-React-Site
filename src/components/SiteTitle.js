@@ -6,10 +6,10 @@ import Links from "./Links"
 export default function SiteTitle() {
     
     // Set position to be normal - CSS doesn't animate it right
-    // setTimeout(() => {
-    //     let title = document.querySelector('.title');
-    //     title.style.position = 'relative';
-    // }, 4000);
+    setTimeout(() => {
+        let title = document.querySelector('.title');
+        title.classList.remove('overlayed')
+    }, 4000);
 
     // Rotate link one by one
     useEffect(() => {
@@ -28,11 +28,11 @@ export default function SiteTitle() {
         };
 
         // Delay call
-        setTimeout(flipLink, 1000);
+        setTimeout(flipLink, 4000);
     });
     
     return (
-    <div className='title'>
+    <div className='title overlayed'>
         <p className="name">Jack Pettigrew</p>
         <Links introTransitionClass="hidden-rotated" />
     </div>

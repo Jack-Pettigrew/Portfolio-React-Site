@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <SiteTitle />
-      {/* <Transition /> */}
+      <Transition />
       <p>Hello</p>
       {/* <FeaturedProjectViewer /> */}
       {/* <Profile /> */}
