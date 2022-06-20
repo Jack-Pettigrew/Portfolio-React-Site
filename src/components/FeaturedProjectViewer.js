@@ -3,7 +3,6 @@ import data from "../data/projects.json";
 
 // styles
 import "./FeaturedProjectViewer.css";
-import image from "../logo.webp"
 
 export default function FeaturedProjectViewer() {
   const { projects } = data;
@@ -20,7 +19,7 @@ export default function FeaturedProjectViewer() {
                 key={project.id}
                 className="project"
                 style={{
-                  backgroundImage: `url(${image})`,
+                  backgroundImage: `url(${project.img})`,
                 }}
               >
                 <div className="info">

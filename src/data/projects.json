@@ -3,17 +3,17 @@
         {
             "id": 1,
             "title": "",
-            "img": "http://localhost:3000/static/media/logo.d0e09359616032a86b3c.webp"
+            "img": "/logo.webp"
         },
         {
             "id": 2,
             "title": "",
-            "img": "http://localhost:3000/static/media/logo.d0e09359616032a86b3c.webp"
+            "img": "/logo.webp"
         },
         {
             "id": 3,
             "title": "",
-            "img": "http://localhost:3000/static/media/logo.d0e09359616032a86b3c.webp"
+            "img": "/logo.webp"
         }
     ]
 }
