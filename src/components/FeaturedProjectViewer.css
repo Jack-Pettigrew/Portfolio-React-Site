@@ -23,6 +23,7 @@
 .featured .projects .project {
     position: relative;
     display: flex;
+    text-align: left;
     margin: 5px 5px;
     width: 50px;
     height: 300px;

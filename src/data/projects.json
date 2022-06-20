@@ -2,17 +2,18 @@
     "projects": [
         {
             "id": 1,
-            "title": "",
+            "title": "Test",
+            "subtitle": "This is a project subtitle",
             "img": "/logo.webp"
         },
         {
             "id": 2,
-            "title": "",
+            "title": "Test",
             "img": "/logo.webp"
         },
         {
             "id": 3,
-            "title": "",
+            "title": "Test",
             "img": "/logo.webp"
         }
     ]
