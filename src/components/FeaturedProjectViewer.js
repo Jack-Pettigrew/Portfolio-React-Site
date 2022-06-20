@@ -3,33 +3,34 @@ import data from "../data/projects.json";
 
 // styles
 import "./FeaturedProjectViewer.css";
+import image from "../logo.webp"
 
 export default function FeaturedProjectViewer() {
   const { projects } = data;
 
   return (
-    <>
-      <h2 className="featured-title">Featured Projects</h2>
+    <div className="featured">
+      <h2>Featured Projects</h2>
 
-      <div className="featured">
+      <div className="projects">
         {projects &&
           projects.map(function (project) {
             return (
               <div
                 key={project.id}
-                className="container"
+                className="project"
                 style={{
-                  backgroundImage: `url(${project.img})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "500px 500px",
+                  backgroundImage: `url(${image})`,
                 }}
               >
-                <h2 className="project-title">Test</h2>
-                <p className="project-description"></p>
+                <div className="info">
+                  <h2 className="project-title">Test</h2>
+                  <p className="project-description"></p>
+                </div>
               </div>
             );
           })}
       </div>
-    </>
+    </div>
   );
 }
