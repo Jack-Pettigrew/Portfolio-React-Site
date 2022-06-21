@@ -6,7 +6,6 @@ import './App.css';
 import SiteTitle from './components/SiteTitle';
 import Transition from './components/Transition';
 import FeaturedProjectViewer from './components/FeaturedProjectViewer';
-import Links from "./components/Links";
 
 function App() {
   return (
