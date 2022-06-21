@@ -1,28 +1,20 @@
 .links {
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    flex-direction: column;
+    align-items: center;
 }
 
-.links .link-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.links .links-container .icon {
-    font-size: 2em;
+.links .link {
     color: white;
-    background-color: rgb(52, 52, 52);
-    border: 5px solid rgb(52, 52, 52);
-    border-radius: 8px;
-    margin: 5px 0px 0px 10px;
+    background-color: rgb(35, 35, 35);
+    font-size: 2em;
+    border: 5px solid rgb(35, 35, 35);
+    border-radius: 5px;
+    margin: 5px;
     transition: 0.5s;
 }
 
-.links .links-container .icon:hover {
-    transform: scale(1.2);
+.links .link:hover {
     transition: 0.5s;
+    transform: scale(1.4);
 }

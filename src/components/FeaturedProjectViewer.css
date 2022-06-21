@@ -1,21 +1,45 @@
 .featured {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 10px;
+    background-color: rgb(235, 235, 235);
+    
+    border-radius: 100px;
+    margin: 10px auto;
+    padding: 10px 0px;
+    width: 75%;
 }
 
-.featured .container {
-    margin: 0 0 5px 5px;
+.featured h2 {
+    margin: 5px auto
+}
+
+.featured .projects {
+    display: flex;
+    flex-direction: row;
+}
+
+.featured .projects .project {
+    position: relative;
+    display: flex;
+    text-align: left;
+    margin: 5px 5px;
     width: 50px;
     height: 300px;
-    overflow: hidden;
-    transition: 1s;
+    background-size: 500px;
+    background-position: center;
     color: rgba(0, 0, 0, 0);
+    transition: 1s;
 }
 
-.featured .container:hover {
+.featured .projects .project:hover {
     color: rgba(255, 255, 255, 1);
     width: 500px;
-    transition: 1s;
+}
+
+.featured .projects .project .info {
+    position: absolute;
+    top: 50%;
+    left: 5%;
 }

@@ -6,15 +6,15 @@ import './App.css';
 import SiteTitle from './components/SiteTitle';
 import Transition from './components/Transition';
 import FeaturedProjectViewer from './components/FeaturedProjectViewer';
+import Links from "./components/Links";
 
 function App() {
   return (
     <div className="App">
       <SiteTitle />
       <Transition />
-      {/* <Profile /> */}
-      {/* <Links /> */}
       <FeaturedProjectViewer />
+      {/* <Profile /> */}
       {/* Univeristy/Personal/Polygonal project selectors */}
     </div>
   );
