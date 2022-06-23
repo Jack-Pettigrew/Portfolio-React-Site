@@ -5,10 +5,11 @@
     justify-content: center;
     
     background-color: rgb(235, 235, 235);
-    border-radius: 100px;
+    border-radius: 25px;
     margin: 10px auto;
     padding: 10px 0px;
     width: 60%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .featured h2 {
