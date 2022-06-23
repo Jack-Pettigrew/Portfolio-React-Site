@@ -2,9 +2,9 @@
 import data from "../data/projects.json";
 
 // styles
-import "./FeaturedProjectViewer.css";
+import "./FeaturedProjectsViewer.css";
 
-export default function FeaturedProjectViewer() {
+export default function FeaturedProjectsViewer() {
   const { projects } = data;
 
   return (

@@ -5,14 +5,15 @@ import './App.css';
 // componentss
 import SiteTitle from './components/SiteTitle';
 import Transition from './components/Transition';
-import FeaturedProjectViewer from './components/FeaturedProjectViewer';
+import FeaturedProjectsViewer from './components/FeaturedProjectsViewer';
 
 function App() {
   return (
     <div className="App">
       <SiteTitle />
       <Transition />
-      <FeaturedProjectViewer />
+
+      <FeaturedProjectsViewer />
       {/* <Profile /> */}
       {/* Univeristy/Personal/Polygonal project selectors */}
     </div>
