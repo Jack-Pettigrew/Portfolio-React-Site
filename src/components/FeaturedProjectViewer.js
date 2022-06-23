@@ -23,8 +23,8 @@ export default function FeaturedProjectViewer() {
                 }}
               >
                 <div className="info">
-                  <h2 className="project-title">{project.title}</h2>
-                  {project.subtitle && <p className="project-description">{project.subtitle}</p>}
+                  <h2>{project.title}</h2>
+                  {project.subtitle && <p>{project.subtitle}</p>}
                 </div>
               </div>
             );

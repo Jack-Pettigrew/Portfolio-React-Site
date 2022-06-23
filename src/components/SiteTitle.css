@@ -13,7 +13,8 @@
     justify-content: center;
     align-items: center;
     animation: 2s slide 2s ease forwards;
-    z-index: 1;
+    z-index: 2;
+    margin-bottom: 10px;
 }
 
 .title .name {
