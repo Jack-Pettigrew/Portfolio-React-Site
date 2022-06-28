@@ -20,7 +20,7 @@ export default function FeaturedProjectsViewer() {
                 className="project"
                 style={{
                   backgroundImage: `url(${project.img})`,
-                  borderRadius: `${project.id == 1 ? "10px 0px 0px 10px" : (projects.length == project.id ? "0px 10px 10px 0px" : "0px")}`
+                  borderRadius: `${project.id === 1 ? "10px 0px 0px 10px" : (projects.length === project.id ? "0px 10px 10px 0px" : "0px")}`
                 }}
               >
                 <div className="info">
