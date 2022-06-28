@@ -4,17 +4,17 @@
             "id": 1,
             "title": "Test",
             "subtitle": "This is a project subtitle",
-            "img": "/logo.webp"
+            "img": "/images/pcgcity.webp"
         },
         {
             "id": 2,
             "title": "Test",
-            "img": "/logo.webp"
+            "img": "/actionshot.jpg"
         },
         {
             "id": 3,
             "title": "Test",
-            "img": "/logo.webp"
+            "img": "/images/scifihallway.png"
         }
     ]
 }

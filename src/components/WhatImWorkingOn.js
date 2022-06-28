@@ -8,7 +8,7 @@ export default function WhatImWorkingOn() {
       <div
         className="project"
         style={{
-          backgroundImage: `url(${"/logo.webp"})`,
+          backgroundImage: `url(${"/actionshot.jpg"})`,
         }}>
         <div className="project-info">
           <h2>Test</h2>

@@ -42,7 +42,6 @@
     position: absolute;
     top: 50%;
     left: 5%;
-    word-wrap: unset;
 }
 
 @media screen and (max-width:900px) {
