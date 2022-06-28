@@ -14,7 +14,6 @@
     align-items: center;
     animation: 2s slide 2s ease forwards;
     z-index: 2;
-    margin-bottom: 10px;
 }
 
 .title .name {
@@ -49,5 +48,11 @@
 
     to {
         height: 20vh;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .title .name {
+        font-size: 14vw;
     }
 }

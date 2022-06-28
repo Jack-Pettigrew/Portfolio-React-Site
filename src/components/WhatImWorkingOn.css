@@ -10,8 +10,6 @@
     height: 250px;
     width: 30%;
     color: transparent;
-    /* height: 300px; */
-    /* width: 40%; */
     border-radius: 50px;
     background-position: center;
     background-size: cover;
@@ -36,4 +34,14 @@
 
 .whatimworkingon .project .project-info * {
     margin: auto;
+}
+
+@media screen and (max-width:900px) {
+    .whatimworkingon .project {
+        width: 60%;
+    }
+
+    .whatimworkingon .project:hover {
+        width: 80%;
+    }
 }
