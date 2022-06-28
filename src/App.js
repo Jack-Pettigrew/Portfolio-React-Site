@@ -13,8 +13,8 @@ function App() {
     <div className="App">
       <SiteTitle />
       <Transition />
-      <WhatImWorkingOn />
       <FeaturedProjectsViewer />
+      <WhatImWorkingOn />
       {/* <Profile /> */}
       {/* Univeristy/Personal/Polygonal project selectors */}
     </div>
