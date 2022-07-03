@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px auto;
+    margin: 20px auto;
     width: 80%;
 }
 
@@ -17,8 +17,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
+    transition: 0.5s;
+}
+
+.featured .projects:hover {
+    height: 300px;
 }
 
 .featured .projects .project {
@@ -26,7 +32,7 @@
     display: flex;
     text-align: left;
     width: 100%;
-    height: 300px;
+    height: 100%;
     color: rgba(0, 0, 0, 0);
     background-size: cover;
     background-position: center;
