@@ -22,6 +22,29 @@
     animation: fadeIn 2s linear forwards;
 }
 
+.title .subtitle {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards 4s;
+}
+
+.title .subtitle * {
+    margin: 10px;
+}
+
+.title .subtitle h3 {
+    transition: 0.5s;
+}
+
+.title .subtitle h3:hover {
+    transform: rotate(5deg) scale(1.4);
+    transition: 0.5s;
+    margin: 10px 30px;
+}
+
 .hidden-rotated {
     transform: rotateY(90deg);
 }
@@ -47,7 +70,7 @@
     }
 
     to {
-        height: 20vh;
+        height: 25vh;
     }
 }
 
