@@ -7,6 +7,8 @@ import SiteTitle from './components/SiteTitle';
 import Transition from './components/Transition';
 import FeaturedProjectsViewer from './components/FeaturedProjectsViewer';
 import WhatImWorkingOn from "./components/WhatImWorkingOn";
+import Category from "./components/Category";
+import CategoryList from "./components/CategoryList";
 
 function App() {
   return (
@@ -15,8 +17,11 @@ function App() {
       <Transition />
       <FeaturedProjectsViewer />
       <WhatImWorkingOn />
-      {/* <Profile /> */}
-      {/* Univeristy/Personal/Polygonal project selectors */}
+      <CategoryList>
+        <Category catgoryName={"Studied"} />
+        <Category catgoryName={"Explored"} />
+        <Category catgoryName={"Polygonal"} />
+      </CategoryList>
     </div>
   );
 }
