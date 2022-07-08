@@ -6,7 +6,7 @@ export default function Category({ catgoryName }) {
       <div className="category">
           <h3>All Things</h3>
           <h1>{catgoryName}</h1>
-          <img src={"/actionshot.jpg"} />
+          <img src={"/actionshot.jpg"} alt="" />
         </div>
   )
 }
