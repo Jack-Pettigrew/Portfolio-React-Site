@@ -6,7 +6,7 @@
     left: 0;
 }
 
-.title {    
+.sitetitle {    
     position: relative;
     display: flex;
     flex-direction: column;
@@ -16,13 +16,13 @@
     z-index: 2;
 }
 
-.title .name {
+.sitetitle .name {
     font-size: 5em;
     margin: 5px auto;
     animation: fadeIn 2s linear forwards;
 }
 
-.title .subtitle {
+.sitetitle .subtitle {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -31,15 +31,15 @@
     animation: fadeIn 0.5s forwards 4s;
 }
 
-.title .subtitle * {
+.sitetitle .subtitle * {
     margin: 10px;
 }
 
-.title .subtitle h3 {
+.sitetitle .subtitle h3 {
     transition: 0.5s;
 }
 
-.title .subtitle h3:hover {
+.sitetitle .subtitle h3:hover {
     transform: rotate(5deg) scale(1.4);
     transition: 0.5s;
     margin: 10px 30px;
@@ -75,7 +75,7 @@
 }
 
 @media screen and (max-width:900px) {
-    .title .name {
+    .sitetitle .name {
         font-size: 14vw;
     }
 }
