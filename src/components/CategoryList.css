@@ -20,3 +20,14 @@
     margin-left: 20px;
     margin-right: 20px;
 }
+
+@media screen and (max-width:500px) {
+    .category-list .list {
+        flex-direction: column;
+    }
+
+    .category-list .list .category {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

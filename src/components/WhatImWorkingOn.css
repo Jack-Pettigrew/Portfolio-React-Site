@@ -38,10 +38,10 @@
 
 @media screen and (max-width:900px) {
     .whatimworkingon .project {
-        width: 60%;
+        width: 80%;
     }
 
     .whatimworkingon .project:hover {
-        width: 80%;
+        width: 90%;
     }
 }
