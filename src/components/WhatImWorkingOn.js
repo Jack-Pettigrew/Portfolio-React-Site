@@ -4,7 +4,7 @@ import "./WhatImWorkingOn.css";
 export default function WhatImWorkingOn() {
   return (
     <div className="whatimworkingon">
-      <h2>What I'm Working On</h2>
+      <h1>What I'm Working On</h1>
       <div
         className="project"
         style={{

@@ -5,23 +5,28 @@
     align-items: center;
 }
 
+.whatimworkingon h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .whatimworkingon .project {
     position: relative;
     height: 250px;
-    width: 30%;
+    width: 40%;
     color: transparent;
     border-radius: 50px;
     background-position: center;
     background-size: cover;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     transition: 0.5s;
 }
 
 .whatimworkingon .project:hover {
     height: 310px;
-    width: 41%;
+    width: 50%;
     color: white;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
 }
 
 .whatimworkingon .project .project-info {
@@ -38,10 +43,10 @@
 
 @media screen and (max-width:900px) {
     .whatimworkingon .project {
-        width: 60%;
+        width: 80%;
     }
 
     .whatimworkingon .project:hover {
-        width: 80%;
+        width: 90%;
     }
 }

@@ -9,8 +9,6 @@ export default function FeaturedProjectsViewer() {
   
   return (
     <div className="featured">
-      {/* <h2>Featured Projects</h2> */}
-
       <div className="projects">
         {projects &&
           projects.map(function (project) {
@@ -30,6 +28,7 @@ export default function FeaturedProjectsViewer() {
               </div>
             );
           })}
+          {/* <h2 className="title">Featured Projects</h2> */}
       </div>
     </div>
   );

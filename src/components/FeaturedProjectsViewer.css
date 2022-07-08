@@ -4,11 +4,7 @@
     align-items: center;
     justify-content: center;
     margin: 20px auto;
-    width: 80%;
-}
-
-.featured h2 {
-    margin: 5px auto
+    width: 90%;
 }
 
 .featured .projects {
@@ -36,7 +32,7 @@
     color: rgba(0, 0, 0, 0);
     background-size: cover;
     background-position: center;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .featured .projects .project:hover {
@@ -48,6 +44,7 @@
     position: absolute;
     top: 50%;
     left: 5%;
+    font-size: 1.4em;
 }
 
 @media screen and (max-width:900px) {

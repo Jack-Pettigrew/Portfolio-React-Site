@@ -30,7 +30,7 @@ export default function SiteTitle() {
   });
 
   return (
-    <div className="title overlayed">
+    <div className="sitetitle overlayed">
       <p className="name">Jack Pettigrew</p>
       <div className="subtitle">
         <h3>Gamer.</h3>
