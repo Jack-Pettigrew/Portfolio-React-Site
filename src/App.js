@@ -9,6 +9,7 @@ import FeaturedProjectsViewer from './components/FeaturedProjectsViewer';
 import WhatImWorkingOn from "./components/WhatImWorkingOn";
 import Category from "./components/Category";
 import CategoryList from "./components/CategoryList";
+import GameCharacterIcon from "./components/GameCharacterIcon";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Category catgoryName={"Explored"} />
         <Category catgoryName={"Polygonal"} />
       </CategoryList>
+      <GameCharacterIcon characterSrc="/images/characters/lilal.png" width="75px" height="75px" />
     </div>
   );
 }
