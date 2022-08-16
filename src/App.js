@@ -10,12 +10,14 @@ import WhatImWorkingOn from "./components/WhatImWorkingOn";
 import Category from "./components/Category";
 import CategoryList from "./components/CategoryList";
 import GameCharacterIcon from "./components/GameCharacterIcon";
+import Menu from "./components/Menu";
 
 function App() {
   return (
     <div className="App">
       <SiteTitle />
       <Transition />
+      <Menu />
       <FeaturedProjectsViewer />
       <WhatImWorkingOn />
       <CategoryList>

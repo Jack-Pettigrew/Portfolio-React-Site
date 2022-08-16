@@ -1,0 +1,45 @@
+.menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.menu .menu-button {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    font-size: 2em;
+    transition: 0.5s;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.menu .menu-button:hover {
+    transition: 0.5s;
+    transform: scale(1.3);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.menu .sidebar-menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+
+.menu .sidebar-menu * {
+    margin: 2% auto;
+    color: white;
+}
+
+.hidden {
+    opacity: 0;
+    transition: 0.5s;
+}
