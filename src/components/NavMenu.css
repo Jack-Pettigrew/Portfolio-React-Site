@@ -1,0 +1,54 @@
+.navbar-burger {
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    font-size: 2em;
+    transition: 0.5s;
+    color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+.navbar-burger:hover {
+    transition: 0.5s;
+    transform: scale(1.3);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: 0.5s;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+.navbar-menu * {
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-menu a {
+    margin: 1.5% auto;
+    text-decoration: none;
+    transition: 0.2s;
+    color: white;
+}
+
+.navbar-menu a:hover{
+    color: rgb(162, 63, 255);
+    transform: translate(0, -5px);
+    transition: 0.2s;
+}
+
+.hidden {
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
