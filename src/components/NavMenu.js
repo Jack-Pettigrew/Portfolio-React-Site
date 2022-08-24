@@ -21,7 +21,7 @@ export default function NavMenu() {
         <h1 style={{ textDecorationLine: "underline" }}>Menu</h1>
         <a href="/"><h1>Portfolio</h1></a>
         <a href="/about-me"><h1>About Me</h1></a>
-        <a href=""><h1>Categories</h1></a>
+        <a href="/categories"><h1>Categories</h1></a>
       </div>
     </>
   );
