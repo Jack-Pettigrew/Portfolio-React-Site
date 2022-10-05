@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./NavMenu.css";
 
 import { FiMenu } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 export default function NavMenu() {
   const [hidden, setHidden] = useState(true);
@@ -19,9 +20,9 @@ export default function NavMenu() {
       </div>
       <div id="navbar-menu" className={"navbar-menu " + (hidden && "hidden")}>
         <h1 style={{ textDecorationLine: "underline" }}>Menu</h1>
-        <a href="/"><h1>Portfolio</h1></a>
-        <a href="/about-me"><h1>About Me</h1></a>
-        <a href="/categories"><h1>Categories</h1></a>
+        <Link to="/"><h1>Portfolio</h1></Link>
+        <Link to="/about-me"><h1>About Me</h1></Link>
+        <Link to="/projects/game-dev"><h1>Game Dev</h1></Link>
       </div>
     </>
   );
