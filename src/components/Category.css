@@ -9,6 +9,12 @@
     height: 200px;
     border-radius: 20px;
     overflow: hidden;
+    transition: 0.5s;
+}
+
+.category:hover {
+    width: 325px;
+    height: 225px;
 }
 
 .category h3, h1 {

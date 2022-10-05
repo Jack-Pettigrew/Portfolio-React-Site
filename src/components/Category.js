@@ -1,12 +1,16 @@
 // styles
 import "./Category.css";
 
-export default function Category({ catgoryName }) {
+import { Link } from "react-router-dom";
+
+export default function Category({ catgoryName, categoryUrl }) {
   return (
-      <div className="category">
-          <h3>All Things</h3>
-          <h1>{catgoryName}</h1>
-          <img src={"/actionshot.jpg"} alt="" />
-        </div>
-  )
+    <Link className="category" to={categoryUrl ? categoryUrl : "/"}>
+      <div>
+        <h3>All Things</h3>
+        <h1>{catgoryName}</h1>
+        <img src={"images/scifihallway.png"} alt="" />
+      </div>
+    </Link>
+  );
 }
