@@ -19,7 +19,7 @@ export default function Home() {
       <WhatImWorkingOn />
       <CategoryList>
         <Category catgoryName={"Studied"} />
-        <Category catgoryName={"Explored"} />
+        <Category catgoryName={"Explored"} categoryUrl="/projects/game-dev" />
         <Category catgoryName={"Polygonal"} />
       </CategoryList>
       <GameCharacterIcon
