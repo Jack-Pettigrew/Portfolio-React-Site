@@ -2,7 +2,7 @@ import React from "react";
 
 export default function GameCharacterIcon({ characterSrc, width, height }) {
   return (
-    <div className="game-character-icon">
+    <div className="flex justify-center">
       <img
         width={width ? width : "100px"}
         height={height ? height : "100px"}
