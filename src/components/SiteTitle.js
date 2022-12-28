@@ -1,43 +1,49 @@
-import "./SiteTitle.css";
-
-import { useEffect } from "react";
-import Links from "./Links";
+import SocialLinks from "./SocialLinks";
 
 export default function SiteTitle() {
-  // Set position to be normal - CSS doesn't animate it right
+  const siteTitle = document.getElementById('site-title');
+
   setTimeout(() => {
-    let title = document.querySelector(".title");
-    title.classList.remove("overlayed");
-  }, 4000);
+    document.getElementById('site-title').classList.remove("translate-y-[40vh]");
+    document.getElementById('site-title').classList.remove("translate-x-[30vw]");
+    document.getElementById('site-title').classList.remove("text-[5em]");
+    document.getElementById('site-title').classList.add("text-[3em]");
+  }, 2000);
 
-  // Rotate link one by one
-  useEffect(() => {
-    const flipLink = async () => {
-      const list = document.querySelectorAll(".link");
-
-      for (let i = 0; i < list.length; i++) {
-        await new Promise((resolve) => {
-          setTimeout(function () {
-            list[i].classList.add("visible-rotated");
-            resolve();
-          }, 250);
-        });
-      }
-    };
-
-    // Delay call
-    setTimeout(flipLink, 4000);
-  });
+  setTimeout(() => {
+    document.getElementById('fading-background').classList.remove("bg-white");
+    document.getElementById('fading-background').classList.add("pointer-events-none");
+  }, 2500);
 
   return (
-    <div className="sitetitle overlayed">
-      <p className="name">Jack Pettigrew</p>
-      <div className="subtitle">
-        <h3>Gamer.</h3>
-        <h3>Game Developer.</h3>
-        <h3>Nerd.</h3>
+    <>
+      <div id="fading-background" className="absolute w-screen h-screen bg-white duration-1000 z-[1]">
       </div>
-      <Links introTransitionClass="hidden-rotated" />
-    </div>
+    
+      <div>
+        <p
+          id="site-title"
+          className="relative text-[5em] pl-[20px] translate-y-[40vh] translate-x-[30vw] duration-1000 z-[2]"
+        >
+          Jack Pettigrew
+        </p>
+
+        <div className="flex flex-row [&>*]:mx-4">
+          <h1 className="text-xl font-bold duration-500 hover:rotate-6 hover:scale-[1.4]">
+            Gamer.
+          </h1>
+          <h1 className="text-xl font-bold duration-500 hover:rotate-6 hover:scale-[1.4]">
+            Game Developer.
+          </h1>
+          <h1 className="text-xl font-bold duration-500 hover:rotate-6 hover:scale-[1.4]">
+            Nerd.
+          </h1>
+        </div>
+      </div>
+
+      <div>
+        <SocialLinks />
+      </div>
+    </>
   );
 }
