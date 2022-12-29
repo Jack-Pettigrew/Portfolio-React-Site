@@ -2,14 +2,13 @@ import React from "react";
 
 import SiteTitle from "../components/SiteTitle";
 import FeaturedProjectsViewer from "../components/FeaturedProjectsViewer";
-import NavMenu from "../components/NavMenu";
 import ImageCard from "../components/ImageCard";
 
 export default function Home() {
   return (
     <div className="App">
       <SiteTitle />
-      <NavMenu />
+
       <FeaturedProjectsViewer />
 
       {/* What I'm working on */}
