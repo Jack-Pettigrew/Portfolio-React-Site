@@ -5,9 +5,9 @@ export default function FeaturedProjectsViewer() {
   const { projects } = data;
   
   return (
-    <div className="mt-[10px] w-full">
+    <div className="mt-[20px] w-full">
       {/* Base Div */}
-      <div className="flex flex-row items-center justify-center mx-[20px] h-[100px] drop-shadow-md duration-500 hover:h-[300px] hover:drop-shadow-xl">
+      <div className="flex flex-row items-center justify-center mx-[20px] h-[100px] drop-shadow-[5px_5px_5px_rgba(0,0,0,0.5)] duration-500 hover:h-[300px]">
         {/* Project */}
         {projects &&
           projects.map(function (project) {

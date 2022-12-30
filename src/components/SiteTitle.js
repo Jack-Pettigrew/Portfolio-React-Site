@@ -23,7 +23,7 @@ export default function SiteTitle() {
       <div className="flex flex-row">
         {/* Site Titles */}
         <div className="w-full pl-[20px]">
-          <p id="site-title" className="relative text-[5em] translate-y-[40vh] translate-x-[30vw] duration-1000 z-[2]">
+          <p id="site-title" className="relative text-[5em] translate-y-[40vh] translate-x-[30vw] duration-1000 z-[2] whitespace-nowrap overflow-visible">
             Jack Pettigrew
           </p>
 
