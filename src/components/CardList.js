@@ -1,8 +1,5 @@
 import React from "react";
 
-// styles
-import "./CategoryList.css";
-
 export default function CategoryList(props) {
   return (
     <div className="category-list">

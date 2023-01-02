@@ -17,7 +17,7 @@ export default function SiteTitle() {
 
   return (
     <>
-      <div id="fading-background" className="absolute w-screen h-screen bg-white duration-1000 z-[1]">
+      <div id="fading-background" className="absolute w-screen h-screen bg-white dark:bg-darkgray duration-1000 z-[1]">
       </div>
 
       <div className="flex flex-row">
