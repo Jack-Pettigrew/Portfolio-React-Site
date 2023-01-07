@@ -7,17 +7,17 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // pages
-import Home from "./pages/Home";
+import OldHome from "./pages/OldHome";
 import GameDev from "./pages/GameDev";
 import FourOhFour from "./pages/FourOhFour";
-import HomeTest from "./pages/HomeTest";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomeTest />} />
-        <Route path="/old-home" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/old-home" element={<OldHome />} />
         <Route path="/projects/game-dev" element={<GameDev />} />
         <Route path="*" element={<FourOhFour />} />
       </Routes>
