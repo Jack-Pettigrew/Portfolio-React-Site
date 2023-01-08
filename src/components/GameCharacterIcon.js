@@ -7,7 +7,7 @@ export default function GameCharacterIcon({ characterSrc, width, height }) {
         width={width ? width : "100px"}
         height={height ? height : "100px"}
         src={characterSrc}
-        alt="One of my original game characters"
+        alt="One of my game characters!"
       />
     </div>
   );
