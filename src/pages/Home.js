@@ -19,7 +19,7 @@ export default function Home() {
         {/* <NavBar /> */}
         <NavBarRounded />
 
-        <div className="flex flex-col sm:flex-row justify-center items-center w-[90vw] sm:w-[70vw] sm:my-3 px-8 py-8 rounded-[25px] backdrop-blur-md bg-[rgba(38,38,38,0.75)] shadow-[5px_5px_20px_0px_rgba(0,0,0,0.5)]">
+        <div className="flex flex-col sm:flex-row justify-center items-center w-[90vw] sm:w-[80vw] sm:my-3 px-8 py-8 rounded-[25px] backdrop-blur-md bg-[rgba(38,38,38,0.75)] shadow-[5px_5px_20px_0px_rgba(0,0,0,0.5)]">
           {/* MAKE INFO BOX ROW FOR IMPROVED INFO SPACING */}
           
           <div className="flex flex-col items-center mb-3 sm:mb-0 sm:mx-5">
@@ -34,7 +34,7 @@ export default function Home() {
             <p className="before:content-['⌨️'] before:mr-2 before:text-xl">Developed various <a href="/projects/games" className="font-bold duration-[200ms] hover:text-2xl underline underline-offset-4 decoration-wavy decoration-[#bc59fd]">games</a> and other <a href="/projects/apps" className="font-bold duration-[200ms] hover:text-2xl underline underline-offset-4 decoration-wavy decoration-[#bc59fd]">interesting projects</a>. <span className="text-[10px]">(...some even have a purpose)</span></p>
             <p>My experience as a developer has thrown many challenges, solidifying my technical skills and forming a healthy, enthusiastic mindset towards future developments.</p>
 
-            <GameCharacterIcon characterSrc="images/characters/lilal.webp" width="75px" height="75px" />
+            <span className="self-center duration-[200ms] hover:rotate-[5deg]"><GameCharacterIcon characterSrc="images/characters/lilal.webp" width="75px" height="75px" /></span>
           </div>
             
         </div>

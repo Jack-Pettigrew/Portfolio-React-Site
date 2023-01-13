@@ -10,7 +10,7 @@ export default function FourOhFour() {
       <br />
       <h1 className="text-4xl font-bold">404</h1>
       <h2 className="text-xl">You got so lost you found an Alien!</h2>
-      <p className="text-sm mt-3">...let's maybe keep this between us</p>
+      <p className="text-sm mt-3">...let's keep this between us...</p>
     </div>
   );
 }
