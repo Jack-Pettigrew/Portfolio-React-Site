@@ -15,7 +15,7 @@ export default function Home() {
       >
       </div> */}
 
-      <div className="flex flex-col w-screen h-full min-h-screen text-white items-center justify-between bg-center bg-cover" style={{ backgroundImage: "url(images/pcgcity.webp)" }}>
+      <div className="flex flex-col w-screen h-full min-h-screen text-white items-center justify-between bg-center bg-cover" style={{ backgroundImage: "url(images/scifihallway.webp)" }}>
         {/* <NavBar /> */}
         <NavBarRounded />
 
