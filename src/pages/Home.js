@@ -9,18 +9,11 @@ import SocialLinks from "../components/SocialLinks";
 export default function Home() {
   return (
     <>
-      {/* <div
-        className="absolute bg-center bg-cover w-screen h-screen z-[-1]"
-        style={{ backgroundImage: "url(images/pcgcity.webp)" }}
-      >
-      </div> */}
 
       <div className="flex flex-col w-screen h-full min-h-screen text-white items-center justify-between bg-center bg-cover" style={{ backgroundImage: "url(images/scifihallway.webp)" }}>
-        {/* <NavBar /> */}
         <NavBarRounded />
 
         <div className="flex flex-col sm:flex-row justify-center items-center w-[90vw] max-w-[1200px] sm:w-[80vw] sm:my-3 px-8 py-8 rounded-[25px] backdrop-blur-md bg-[rgba(38,38,38,0.75)] shadow-[5px_5px_20px_0px_rgba(0,0,0,0.5)]">
-          {/* MAKE INFO BOX ROW FOR IMPROVED INFO SPACING */}
           
           <div className="flex flex-col items-center mb-3 sm:mb-0 sm:mx-5">
             <img src="/logo_225.webp" width="150px" height="150px" className="rounded-full drop-shadow-lg" alt="Profile Picture" />
@@ -39,7 +32,6 @@ export default function Home() {
             
         </div>
 
-        {/* <Footer /> */}
         <FooterRounded />
       </div>
       
