@@ -14,7 +14,6 @@ export default function Home() {
         <NavBarRounded />
 
         <div className="flex flex-col sm:flex-row justify-center items-center w-[90vw] max-w-[1200px] sm:w-[80vw] sm:my-3 px-8 py-8 rounded-[25px] backdrop-blur-md bg-[rgba(38,38,38,0.75)] shadow-[5px_5px_20px_0px_rgba(0,0,0,0.5)]">
-          
           <div className="flex flex-col items-center mb-3 sm:mb-0 sm:mx-5">
             <img src="/logo_225.webp" width="150px" height="150px" className="rounded-full drop-shadow-lg" alt="Profile Picture" />
             <h1 className="text-center text-5xl my-5">Jack Pettigrew</h1>

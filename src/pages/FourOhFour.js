@@ -9,7 +9,8 @@ export default function FourOhFour() {
     <div className="absolute w-screen h-screen flex flex-col justify-between items-center text-center text-white bg-[#313131]">
       <NavBarRounded />
     
-      <div className="flex flex-col w-full h-full justify-center items-center bg-[#3c3c3c]">
+      {/* bg-[#3c3c3c] */}
+      <div className="flex flex-col w-full h-full justify-center items-center">
         <a className="duration-200 hover:scale-125 hover:rotate-6" href="https://youtu.be/HQoRXhS7vlU" target="_blank">
           <GameCharacterIcon characterSrc="/images/characters/lilal.png" />
         </a>
