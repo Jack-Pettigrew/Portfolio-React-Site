@@ -7,10 +7,11 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // pages
-import OldHome from "./pages/OldHome";
-import GameDev from "./pages/GameDev";
 import FourOhFour from "./pages/FourOhFour";
 import Home from "./pages/Home";
+import OldHome from "./pages/OldHome";
+import AboutMe from "./pages/AboutMe";
+import GameDev from "./pages/GameDev";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/old-home" element={<OldHome />} />
+        <Route path="/about-me" element={<AboutMe />} />
         <Route path="/projects/game-dev" element={<GameDev />} />
         <Route path="*" element={<FourOhFour />} />
       </Routes>
