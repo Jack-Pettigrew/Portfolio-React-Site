@@ -10,8 +10,9 @@ export default function AboutMe() {
           <div className="flex flex-col sm:flex-row gap-5 mx-5 sm:mx-20">
 
             {/* image */}
-            <div id="about-me-supporting" className='flex basis-1/3 justify-center items-center'>
-              <img class="rounded-full" src="/logo_450.webp" alt='Profile Picture' />     
+            <div id="about-me-supporting" className='basis-1/3 flex flex-col justify-center items-center'>
+              <img class="rounded-full" src="/logo_450.webp" alt='Profile Picture' />
+              <h1 className="m-5 text-[2.5rem]">👋🏻 About Me</h1>
             </div>
               
             {/* info */}
