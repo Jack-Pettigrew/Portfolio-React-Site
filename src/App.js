@@ -11,7 +11,7 @@ import FourOhFour from "./pages/FourOhFour";
 import Home from "./pages/Home";
 import OldHome from "./pages/OldHome";
 import AboutMe from "./pages/AboutMe";
-import GameDev from "./pages/GameDev";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/old-home" element={<OldHome />} />
         <Route path="/about-me" element={<AboutMe />} />
-        <Route path="/projects/game-dev" element={<GameDev />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<FourOhFour />} />
       </Routes>
     </BrowserRouter>
