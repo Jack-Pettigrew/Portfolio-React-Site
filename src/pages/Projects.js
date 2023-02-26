@@ -9,11 +9,13 @@ import RoundedContainer from "../components/RoundedContainer";
 
 export default function Projects() {
   return (
-    <div id="projects" className="flex flex-col min-h-screen justify-between items-center text-white bg-center bg-cover" style={{ backgroundImage: "url(images/scifihallway.webp)" }}>
+    <div id="projects" className="flex flex-col min-h-screen justify-between items-center text-white">
+      
+      <div className="fixed top-[-1vh] w-[101vw] h-[102vh] bg-center bg-cover blur-sm" style={{ backgroundImage: "url(images/scifihallway.webp)" }}></div>
       
       <NavBarRounded />
       
-      <div className="basis-3/4 flex flex-col items-center w-full">
+      <div className="flex flex-col grow items-center w-full">
 
         <RoundedContainer className="mb-4 text-center">
           <h1 className="text-[3rem]">Projects 💻</h1>

@@ -4,10 +4,12 @@ import NavBarRounded from '../components/NavBarRounded'
 
 export default function AboutMe() {
   return (
-      <div className="flex flex-col min-h-screen justify-between items-center text-white bg-center bg-cover" style={{ backgroundImage: "url(images/scifihallway.webp)" }}>
+      <div className="flex flex-col min-h-screen justify-between items-center text-white">
+          <div className="fixed top-[-1vh] w-[101vw] h-[102vh] bg-center bg-cover blur-sm" style={{ backgroundImage: "url(images/scifihallway.webp)" }}></div>
+
           <NavBarRounded />
 
-          <div className="flex flex-col sm:flex-row gap-5 mx-5 sm:mx-20">
+          <div className="relative flex flex-col justify-center items-center w-screen lg:flex-row gap-5 px-10 sm:mx-20">
 
             {/* image */}
             <div id="about-me-supporting" className='flex flex-col justify-center items-center'>
@@ -16,7 +18,7 @@ export default function AboutMe() {
             </div>
             
             {/* info */}
-            <div id="about-me-text" className="basis-2/3 flex flex-col gap-4 px-6 py-4 max-w-[1225px] rounded-[25px] backdrop-blur-md bg-[rgba(38,38,38,0.75)] shadow-[5px_5px_20px_0px_rgba(0,0,0,0.5)]">
+            <div id="about-me-text" className="basis-2/3 flex flex-col h-full gap-4 px-6 py-4 max-w-[1225px] rounded-[25px] backdrop-blur-md bg-[rgba(38,38,38,0.75)] shadow-[5px_5px_20px_0px_rgba(0,0,0,0.5)]">
               <p>To create an experience someone can wholeheartedly connect with is a dream of mine. This deep rooted goal, formed over decades since childhood, is what drives my passion to create great games and experiences.</p>
               <p>As a First-Class Graduate in Game Computing, I've become proficient in both <span className='font-bold text-[#bc59fd]'>C#</span> and <span className='font-bold text-[#bc59fd]'>C++</span> through both game and general software development University projects of which I am proud (such as Kings vs Snakes (Legacy), Quasar: Space Boids, PCG: Underwater City, my Final Year Project and my general software projects).</p>
               <p>As a Software Developer I have extended and developed flexible systems of a propriety management system using <span className='font-bold text-[#bc59fd]'>PHP</span>, <span className='font-bold text-[#bc59fd]'>MySQL</span>,  <span className='font-bold text-[#bc59fd]'>HTML</span>, <span className='font-bold text-[#bc59fd]'>CSS</span>, <span className='font-bold text-[#bc59fd]'>JavaScript</span> and <span className='font-bold text-[#bc59fd]'>jQuery</span> for asynchronous operations with databases - improving, digitising or automating laborious analogue work for 20+ Students Unions across the UK.</p>
