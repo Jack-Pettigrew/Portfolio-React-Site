@@ -6,12 +6,12 @@ import ProjectList from "../components/ProjectList";
 import NavBarRounded from "../components/NavBarRounded";
 import FooterRounded from "../components/FooterRounded";
 import RoundedContainer from "../components/RoundedContainer";
+import BackgroundImage from "../components/BackgroundImage";
 
 export default function Projects() {
   return (
     <div id="projects" className="flex flex-col min-h-screen justify-between items-center text-white">
-      
-      <div className="fixed top-[-1vh] w-[101vw] h-[102vh] bg-center bg-cover blur-sm" style={{ backgroundImage: "url(images/scifihallway.webp)" }}></div>
+      <BackgroundImage />      
       
       <NavBarRounded />
       

@@ -1,18 +1,15 @@
 import React from "react";
-import Footer from "../components/Footer";
 import FooterRounded from "../components/FooterRounded";
 import GameCharacterIcon from "../components/GameCharacterIcon";
-import NavBar from "../components/NavBar";
 import NavBarRounded from "../components/NavBarRounded";
 import SocialLinks from "../components/SocialLinks";
+import BackgroundImage from "../components/BackgroundImage";
 
 export default function Home() {
   return (
     <>
-      <div
-        className="flex flex-col w-screen h-full min-h-screen text-white items-center justify-between"
-      >
-        <div className="fixed top-[-1vh] w-[101vw] h-[102vh] bg-center bg-cover blur-sm" style={{ backgroundImage: "url(images/scifihallway.webp)" }}></div>
+      <div className="flex flex-col w-screen h-full min-h-screen text-white items-center justify-between">
+        <BackgroundImage />
 
         <NavBarRounded />
 
