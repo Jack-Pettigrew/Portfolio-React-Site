@@ -11,7 +11,8 @@ import FourOhFour from "./pages/FourOhFour";
 import Home from "./pages/Home";
 import OldHome from "./pages/OldHome";
 import AboutMe from "./pages/AboutMe";
-import Projects from "./pages/Projects";
+import ProjectsPage from "./pages/ProjectsPage";
+import Project from "./pages/Project";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/old-home" element={<OldHome />} />
         <Route path="/about-me" element={<AboutMe />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects/:projectID" element={<Project />} />
         <Route path="*" element={<FourOhFour />} />
       </Routes>
     </BrowserRouter>

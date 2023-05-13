@@ -20,7 +20,7 @@ export default function Home() {
               width="150px"
               height="150px"
               className="rounded-full drop-shadow-lg"
-              alt="Profile Picture"
+              alt="Portrait"
             />
             <h1 className="text-center text-5xl my-5">Jack Pettigrew</h1>
             <SocialLinks />
@@ -35,6 +35,7 @@ export default function Home() {
                 className="font-bold duration-[200ms] hover:text-2xl underline underline-offset-4 decoration-wavy decoration-[#bc59fd]"
                 href="https://github.com/Jack-Pettigrew"
                 target="_blank"
+                rel="noreferrer"
               >
                 Software Developer
               </a>{" "}
@@ -43,6 +44,7 @@ export default function Home() {
                 className="font-bold duration-[200ms] hover:text-2xl underline underline-offset-4 decoration-wavy decoration-[#bc59fd]"
                 href="https://www.youtube.com/playlist?list=PLK-WtXTiwG01_W2roS1Y9Ysn4EmHJvLRt"
                 target="_blank"
+                rel="noreferrer"
               >
                 Game Developer
               </a>{" "}
@@ -54,6 +56,7 @@ export default function Home() {
                 className="font-bold duration-[200ms] hover:text-2xl underline underline-offset-4 decoration-wavy decoration-[#bc59fd]"
                 href="https://www.youtube.com/@DarkDax"
                 target="_blank"
+                rel="noreferrer"
               >
                 YouTube Content Creator
               </a>{" "}

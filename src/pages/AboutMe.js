@@ -17,7 +17,7 @@ export default function AboutMe() {
           className="flex flex-col justify-center items-center"
         >
           <img
-            class="rounded-full"
+            className="rounded-full"
             src="/logo_450.webp"
             alt="Profile Picture"
           />

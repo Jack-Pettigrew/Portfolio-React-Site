@@ -4,17 +4,37 @@
             "id": 1,
             "title": "Test",
             "subtitle": "This is a project subtitle",
-            "img": "/images/pcgcity.webp"
+            "projectImage": "/images/scifihallway.webp",
+            "images": [
+                "/images/actionshot.jpg",
+                "/images/pcgcity.webp",
+                "/images/scifihallway.webp"
+            ],
+            "tools": [
+                "Unity",
+                "Blender",
+                "Aesprite"
+            ]
         },
         {
             "id": 2,
             "title": "Test",
-            "img": "/actionshot.jpg"
+            "projectImage": "/images/actionshot.jpg"
         },
         {
             "id": 3,
             "title": "Test",
-            "img": "/images/scifihallway.png"
+            "projectImage": "/images/scifihallway.webp"
+        },
+        {
+            "id": 4,
+            "title": "Test",
+            "projectImage": "/images/scifihallway.webp"
+        },
+        {
+            "id": 4,
+            "title": "Test",
+            "projectImage": "/images/scifihallway.webp"
         }
     ]
 }

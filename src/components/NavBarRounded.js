@@ -8,7 +8,7 @@ export default function NavBarRounded() {
           <Link className="duration-200 hover:text-[#a23fff] hover:-translate-y-[3px] hover:text" to="/"><h1>Home</h1></Link>
           <Link className="duration-200 hover:text-[#a23fff] hover:-translate-y-[3px] hover:text" to="/about-me"><h1>About Me</h1></Link>
           <Link className="duration-200 hover:text-[#a23fff] hover:-translate-y-[3px] hover:text" to="/projects"><h1>Projects</h1></Link>
-          <Link className="duration-200 hover:text-[#a23fff] hover:-translate-y-[3px] hover:text" to="/projects/game-dev"><h1>DarkDax</h1></Link>
+          <Link className="duration-200 hover:text-[#a23fff] hover:-translate-y-[3px] hover:text" to="/404"><h1>DarkDax</h1></Link>
       </div>
     </div>
   )
