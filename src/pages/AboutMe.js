@@ -19,7 +19,7 @@ export default function AboutMe() {
           <img
             className="rounded-full"
             src="/logo_450.webp"
-            alt="Profile Picture"
+            alt="Profile"
           />
           <h1 className="m-5 text-[2.5rem]">👋🏻 About Me</h1>
         </div>

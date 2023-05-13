@@ -5,10 +5,11 @@ import NavBarRounded from "../components/NavBarRounded";
 import FooterRounded from "../components/FooterRounded";
 import RoundedContainer from "../components/RoundedContainer";
 import projects from "../data/projects.json";
+import * as DOMPurify from "dompurify";
 
 export default function Project() {
   let params = useParams();
-  const project = projects["projects"][params.projectID - 1];
+    const project = projects["projects"][params.projectID - 1];
 
   return (
     <div className="flex flex-col min-h-screen justify-between items-center text-white">
@@ -55,11 +56,11 @@ export default function Project() {
         {/* Right Panel */}
         <div className="basis-2/3 flex flex-col gap-2">
           <RoundedContainer>
-            <h1>{project.title}</h1>
+            <h1>{DOMPurify.sanitize(project.title)}</h1>
           </RoundedContainer>
 
           <RoundedContainer className="h-full">
-            <p>{project.subtitle}</p>
+            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(project.subtitle)}}></div>
           </RoundedContainer>
         </div>
       </div>
