@@ -1,3 +1,90 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[11].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"src/app/layout.tsx","import":"Poppins","arguments":[{"subsets":["latin"],"weight":["300","400","500"]}],"variableName":"font"} ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* devanagari */
+@font-face {
+  font-family: '__Poppins_b2bd2b';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/_next/static/media/e025c64520263018-s.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Poppins_b2bd2b';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/_next/static/media/953974ac5e9ff354-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Poppins_b2bd2b';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/_next/static/media/c04551857776278f-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: '__Poppins_b2bd2b';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/87c72f23c47212b9-s.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Poppins_b2bd2b';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/591327bf3b62a611-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Poppins_b2bd2b';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/916d3686010a8de2-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: '__Poppins_b2bd2b';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/media/839135d04a097cea-s.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Poppins_b2bd2b';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/media/370d1cc320ec5619-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Poppins_b2bd2b';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/media/7777133e901cd5ed-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Poppins_Fallback_b2bd2b';src: local("Arial");ascent-override: 92.33%;descent-override: 30.78%;line-gap-override: 8.79%;size-adjust: 113.73%
+}.__className_b2bd2b {font-family: '__Poppins_b2bd2b', '__Poppins_Fallback_b2bd2b';font-style: normal
+}
+
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/globals.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
@@ -498,17 +585,20 @@ video {
 .fixed {
   position: fixed;
 }
+.absolute {
+  position: absolute;
+}
 .relative {
   position: relative;
 }
-.right-\[-10px\] {
-  right: -10px;
-}
-.top-\[-10px\] {
-  top: -10px;
+.left-\[calc\(50\%-32px\)\] {
+  left: calc(50% - 32px);
 }
 .top-\[-1vh\] {
   top: -1vh;
+}
+.top-\[calc\(100\%-32px\)\] {
+  top: calc(100% - 32px);
 }
 .m-2 {
   margin: 0.5rem;
@@ -520,9 +610,8 @@ video {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 .mb-3 {
   margin-bottom: 0.75rem;
@@ -533,23 +622,32 @@ video {
 .flex {
   display: flex;
 }
+.aspect-\[6\/2\] {
+  aspect-ratio: 6/2;
+}
 .h-\[102vh\] {
   height: 102vh;
 }
-.h-\[105vh\] {
-  height: 105vh;
+.h-\[64px\] {
+  height: 64px;
 }
 .h-full {
   height: 100%;
 }
+.min-h-48 {
+  min-height: 12rem;
+}
 .min-h-screen {
   min-height: 100vh;
+}
+.w-80 {
+  width: 20rem;
 }
 .w-\[101vw\] {
   width: 101vw;
 }
-.w-\[105vw\] {
-  width: 105vw;
+.w-\[64px\] {
+  width: 64px;
 }
 .w-\[90vw\] {
   width: 90vw;
@@ -563,23 +661,23 @@ video {
 .w-screen {
   width: 100vw;
 }
+.min-w-80 {
+  min-width: 20rem;
+}
+.max-w-96 {
+  max-width: 24rem;
+}
 .max-w-\[1200px\] {
   max-width: 1200px;
-}
-.grow {
-  flex-grow: 1;
-}
-.basis-0 {
-  flex-basis: 0px;
 }
 .basis-1\/5 {
   flex-basis: 20%;
 }
-.basis-3\/4 {
-  flex-basis: 75%;
-}
 .basis-4\/5 {
   flex-basis: 80%;
+}
+.basis-full {
+  flex-basis: 100%;
 }
 @keyframes pulse {
 
@@ -590,11 +688,17 @@ video {
 .animate-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+.cursor-default {
+  cursor: default;
+}
 .flex-col {
   flex-direction: column;
 }
 .items-center {
   align-items: center;
+}
+.items-baseline {
+  align-items: baseline;
 }
 .justify-center {
   justify-content: center;
@@ -602,8 +706,8 @@ video {
 .justify-between {
   justify-content: space-between;
 }
-.justify-around {
-  justify-content: space-around;
+.gap-2 {
+  gap: 0.5rem;
 }
 .gap-3 {
   gap: 0.75rem;
@@ -614,11 +718,23 @@ video {
 .gap-6 {
   gap: 1.5rem;
 }
+.gap-10 {
+  gap: 2.5rem;
+}
+.gap-20 {
+  gap: 5rem;
+}
 .gap-1 {
   gap: 0.25rem;
 }
 .self-center {
   align-self: center;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.text-pretty {
+  text-wrap: pretty;
 }
 .rounded-\[10px\] {
   border-radius: 10px;
@@ -631,6 +747,9 @@ video {
 }
 .rounded-xl {
   border-radius: 0.75rem;
+}
+.border-2 {
+  border-width: 2px;
 }
 .bg-\[\#009cff\] {
   --tw-bg-opacity: 1;
@@ -646,9 +765,9 @@ video {
 .bg-\[rgba\(38\2c 38\2c 38\2c 0\.75\)\] {
   background-color: rgba(38,38,38,0.75);
 }
-.bg-gray-300 {
+.bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .bg-purple-500 {
   --tw-bg-opacity: 1;
@@ -662,26 +781,23 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-white\/80 {
-  background-color: rgb(255 255 255 / 0.8);
-}
-.bg-white\/85 {
-  background-color: rgb(255 255 255 / 0.85);
-}
-.bg-\[url\(\'\/images\/actionshot\.jpg\'\)\] {
-  background-image: url('/images/actionshot.jpg');
-}
-.bg-\[url\(\'\/images\/pcgcity\.webp\'\)\] {
-  background-image: url('/images/pcgcity.webp');
-}
-.bg-\[url\(\'\/images\/scifihallway\.webp\'\)\] {
-  background-image: url('/images/scifihallway.webp');
-}
 .bg-cover {
   background-size: cover;
 }
 .bg-center {
   background-position: center;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+.object-top {
+  -o-object-position: top;
+     object-position: top;
 }
 .p-1 {
   padding: 0.25rem;
@@ -702,30 +818,37 @@ video {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
 .pl-1 {
   padding-left: 0.25rem;
+}
+.pt-3 {
+  padding-top: 0.75rem;
+}
+.pt-5 {
+  padding-top: 1.25rem;
+}
+.pt-8 {
+  padding-top: 2rem;
 }
 .text-center {
   text-align: center;
 }
 .text-start {
   text-align: start;
+}
+.align-baseline {
+  vertical-align: baseline;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -739,11 +862,11 @@ video {
   font-size: 3rem;
   line-height: 1;
 }
+.text-\[0\.5em\] {
+  font-size: 0.5em;
+}
 .text-\[10px\] {
   font-size: 10px;
-}
-.text-\[14px\] {
-  font-size: 14px;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -756,6 +879,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 .font-bold {
   font-weight: 700;
@@ -782,9 +909,6 @@ video {
 }
 .underline-offset-4 {
   text-underline-offset: 4px;
-}
-.bg-blend-lighten {
-  background-blend-mode: lighten;
 }
 .bg-blend-luminosity {
   background-blend-mode: luminosity;
@@ -835,10 +959,12 @@ video {
 
 h1 {
   font-size: 1.75rem;
+  font-weight: 500;
 }
 
 p {
   font-size: 1rem;
+  font-weight: 300;
 }
 
 /* :root {
@@ -949,8 +1075,22 @@ body {
   color: rgb(55 48 163 / var(--tw-text-opacity));
 }
 
-.hover\:decoration-white:hover {
-  text-decoration-color: #fff;
+.hover\:decoration-\[\#b75efe\]:hover {
+  text-decoration-color: #b75efe;
+}
+
+.hover\:decoration-\[\#dcb9fa\]:hover {
+  text-decoration-color: #dcb9fa;
+}
+
+.group:hover .group-hover\:top-\[calc\(90\%-32px\)\] {
+  top: calc(90% - 32px);
+}
+
+.group:hover .group-hover\:shadow-\[3px_3px_10px_0px_rgba\(0\2c 0\2c 0\2c 0\.2\)\] {
+  --tw-shadow: 3px 3px 10px 0px rgba(0,0,0,0.2);
+  --tw-shadow-colored: 3px 3px 10px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (min-width: 640px) {
@@ -996,45 +1136,8 @@ body {
     flex-direction: row;
   }
 
-  .lg\:pb-5 {
-    padding-bottom: 1.25rem;
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
   }
-
-  .lg\:pt-20 {
-    padding-top: 5rem;
-  }
-}
-
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[11].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"src/app/layout.tsx","import":"Poppins","arguments":[{"subsets":["latin"],"weight":"400"}],"variableName":"font"} ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/* devanagari */
-@font-face {
-  font-family: '__Poppins_8c1529';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/_next/static/media/87c72f23c47212b9-s.woff2) format('woff2');
-  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
-}
-/* latin-ext */
-@font-face {
-  font-family: '__Poppins_8c1529';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/_next/static/media/591327bf3b62a611-s.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: '__Poppins_8c1529';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/_next/static/media/916d3686010a8de2-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: '__Poppins_Fallback_8c1529';src: local("Arial");ascent-override: 92.33%;descent-override: 30.78%;line-gap-override: 8.79%;size-adjust: 113.73%
-}.__className_8c1529 {font-family: '__Poppins_8c1529', '__Poppins_Fallback_8c1529';font-weight: 400;font-style: normal
 }
 

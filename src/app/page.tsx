@@ -1,29 +1,34 @@
-import CardLinks from "@/components/CardLinks";
+import CardImageHeader from "@/components/CardImageHeader";
+import WhatImWorkingOn from "@/components/WhatImWorkingOn";
 import Link from "next/link";
 
 export default function index() {
 
     return (
-        <div className="flex flex-col gap-6 w-full justify-center my-auto text-xl">
+        <div className="flex flex-col gap-10 w-full h-full justify-center">
 
-            <div className="flex flex-col gap-5">
-                <h1>About Me 👋🏻</h1>
+            <WhatImWorkingOn projectImageRoute="/images/re2_bt_action.webp" projectLink="/">
+                <h1 className="text-xl mb-2">Mr X AI - Behaviour Tree Study</h1>
+                <p>A video game AI study developing a Behaviour Tree from scratch to recreate the Mr X stalker system from Resident Evil 2 Remake (2019) within Unity.</p>
+            </WhatImWorkingOn>
 
-                <div className="flex gap-3 text-[14px]">
-                    <div className="flex flex-col p-5 rounded-xl basis-0 grow bg-[url('/images/pcgcity.webp')] bg-cover bg-center bg-white/85 bg-blend-lighten shadow-[3px_3px_10px_0px_rgba(0,0,0,0.2)]">
-                        <p className="text-center text-3xl">💻</p>
+            <div className="flex flex-col gap-2">
+                <h1 className="text-center cursor-default">About Me 👋🏻</h1>
+
+                <div className="flex flex-col lg:flex-row w-full gap-3">
+                    <CardImageHeader imageSrc="/images/pcgcity.webp" cardHeaderIcon="💻">
                         <p className="m-auto">
                             <a
-                                className="font-bold duration-[200ms] underline underline-offset-4 decoration-wavy decoration-[#bc59fd] hover:text-[#bc59fd] hover:decoration-white"
+                                className="font-bold duration-[200ms] underline underline-offset-4 decoration-wavy decoration-[#bc59fd] hover:text-[#bc59fd] hover:decoration-[#b75efe]"
                                 href="https://github.com/Jack-Pettigrew"
                                 target="_blank"
                                 rel="noreferrer"
                             >
                                 Software Developer
                             </a>{" "}
-                            and aspiring{" "}
+                            and aspiring {" "}
                             <a
-                                className="font-bold duration-[200ms] underline underline-offset-4 decoration-wavy decoration-[#bc59fd] hover:text-[#bc59fd] hover:decoration-white"
+                                className="font-bold duration-[200ms] underline underline-offset-4 decoration-wavy decoration-[#bc59fd] hover:text-[#bc59fd] hover:decoration-[#dcb9fa]"
                                 href="https://www.youtube.com/playlist?list=PLK-WtXTiwG01_W2roS1Y9Ysn4EmHJvLRt"
                                 target="_blank"
                                 rel="noreferrer"
@@ -33,13 +38,12 @@ export default function index() {
                             with a passion and desire to contribute to the fantastical world
                             of video games.
                         </p>
-                    </div>
+                    </CardImageHeader>
 
-                    <div className="flex flex-col p-5 rounded-xl basis-0 grow bg-[url('/images/scifihallway.webp')] bg-cover bg-center bg-white/80 bg-blend-lighten shadow-[3px_3px_10px_0px_rgba(0,0,0,0.2)]">
-                        <p className="text-center text-3xl">🕹️</p>
+                    <CardImageHeader imageSrc="/images/scifihallway.webp" cardHeaderIcon="🕹️">
                         <p className="m-auto">
                             <a
-                                className="font-bold duration-[200ms] underline underline-offset-4 decoration-wavy decoration-[#bc59fd] hover:text-[#bc59fd] hover:decoration-white"
+                                className="font-bold duration-[200ms] underline underline-offset-4 decoration-wavy decoration-[#bc59fd] hover:text-[#bc59fd] hover:decoration-[#dcb9fa]"
                                 href="https://www.youtube.com/@DarkDax"
                                 target="_blank"
                                 rel="noreferrer"
@@ -49,37 +53,28 @@ export default function index() {
                             making content about all things video games and video game
                             development.
                         </p>
-                    </div>
+                    </CardImageHeader>
 
-                    <div className="flex flex-col p-5 rounded-xl basis-0 grow bg-[url('/images/actionshot.jpg')] bg-cover bg-center bg-white/80 bg-blend-lighten shadow-[3px_3px_10px_0px_rgba(0,0,0,0.2)]">
-                        <p className="text-center text-3xl">⌨️</p>
-                        <p className="m-auto">
+                    <CardImageHeader imageSrc="/images/actionshot.jpg" cardHeaderIcon="⌨️">
+                        <p>
                             Developing various{" "}
                             <Link
                                 href="/games"
-                                className="font-bold duration-[200ms] underline underline-offset-4 decoration-wavy decoration-[#bc59fd] hover:text-[#bc59fd] hover:decoration-white"
+                                className="font-bold duration-[200ms] underline underline-offset-4 decoration-wavy decoration-[#bc59fd] hover:text-[#bc59fd] hover:decoration-[#dcb9fa]"
                             >
                                 games
                             </Link>{" "}
                             and other{" "}
                             <Link
                                 href="/apps"
-                                className="font-bold duration-[200ms] underline underline-offset-4 decoration-wavy decoration-[#bc59fd] hover:text-[#bc59fd] hover:decoration-white"
+                                className="font-bold duration-[200ms] underline underline-offset-4 decoration-wavy decoration-[#bc59fd] hover:text-[#bc59fd] hover:decoration-[#dcb9fa]"
                             >
                                 interesting projects
-                            </Link>
-                            .{" "}
-                            <span className="text-[10px]">(...some even have a purpose)</span>
+                            </Link>.
                         </p>
-                    </div>
+                        <p className="mt-3 text-[0.5em]">(...some even have a purpose)</p>
+                    </CardImageHeader>
                 </div>
-            </div>
-
-
-            <div className="flex gap-3 justify-around">
-                <CardLinks title="Games" href="/games" />
-                <CardLinks title="Projects" href="/projects" />
-                <CardLinks title="Other" href="/other" />
             </div>
         </div >
     )
