@@ -8,7 +8,7 @@ export default function index() {
     return (
         <div className="flex w-full h-full justify-center">
             <div className="flex flex-col gap-3 p-5 w-full max-w-[1200px]">
-                <div id="project-header" className={project.headerImage ? "relative flex h-[30%]" : ""}>
+                <div id="project-header" className={project.headerImage ? "relative flex h-[250px]" : ""}>
                     {project.headerImage && <Image src={project.headerImage} fill={true} alt="Project header image" className="z-[-10] object-cover object-center rounded-xl" />}
 
                     <div className={project.headerImage ? "m-2 px-3 py-2 self-end text-bottom text-white bg-black/20 rounded-xl backdrop-blur-lg" : ""}>
@@ -17,25 +17,41 @@ export default function index() {
                     </div>
                 </div>
 
-                <div className="flex gap-3">
+                <div className="flex gap-2">
                     {/*  Sidebar */}
-                    <Card id="tools" className="h-fit w-48 shrink-0">
-                        <h2>Tools</h2>
-                        <ul className="list-disc list-inside">
-                            {project.tools.map(function (element, index) {
+                    <div className="flex flex-col gap-2">
+                        <Card id="links" className="h-fit w-48 shrink-0">
+                            <h2>Links</h2>
+                            {project.links.map(function (element, index) {
                                 return (
-                                    <li key={index}>
-                                        {element}
-                                    </li>
+                                    <p key={index} className="text-sm font-normal"><a href={element.href} className="text-purple-500 hover:text-purple-700" target="_blank">
+                                        {element.name}
+                                    </a></p>
                                 )
                             })}
-                        </ul>
-                    </Card>
+                        </Card>
+
+                        <Card id="tools" className="h-fit w-48 shrink-0">
+                            <h2>Tools</h2>
+                            <ul className="list-disc list-inside">
+                                {project.tools.map(function (element, index) {
+                                    return (
+                                        <li key={index} className="text-sm">
+                                            {element}
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                        </Card>
+                    </div>
+
 
                     {/* Main Content */}
                     <div className="flex flex-col gap-3">
                         <Card className="h-fit">
-                            <p className="whitespace-pre-line">{project.description}</p>
+                            <div dangerouslySetInnerHTML={{ __html: project.description }}>
+                                {/* <p className="whitespace-pre-line">{project.description}</p> */}
+                            </div>
                         </Card>
 
                         {/* Images Carousel */}

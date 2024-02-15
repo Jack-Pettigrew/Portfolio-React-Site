@@ -9,10 +9,17 @@
                 "aesprite",
                 "photoshop"
             ],
-            "links": {
-                "itchio": "https://pixeldump.itch.io/"
-            },
-            "description": "A technical exploration and recreation of the 'Mr. X' AI system from Resident Evil 2 Remake (2019) using my own implementation of a Behaviour Tree (BT) system. This project serves as my first dive into video game AI by creating a BT from the ground up.\n\nMr. X is a video game AI that hunts the player through the level, stalking the halls and searching rooms. I've attempted to reproduce that behaviour to learn how to create a basic BT system.",
+            "links": [
+                {
+                    "name": "💻 YouTube DevLog",
+                    "href": "https://www.youtube.com/watch?v=6pg5opPhGF4"
+                },
+                {
+                    "name": "🎮 itchio",
+                    "href": "https://jackpettigrew.itch.io/game-ai-study-mr-x-re2"
+                }
+            ],
+            "description": "<p>A technical exploration and recreation of the 'Mr. X' AI system from Resident Evil 2 Remake (2019) using my own implementation of a Behaviour Tree (BT) system. This project serves as my first dive into video game AI by creating a BT from the ground up.</p><br><p>Mr. X is a video game AI that hunts the player through the level, stalking the halls and searching rooms. I've attempted to reproduce that behaviour to learn how to create a basic BT system.</p><br><h1>Features</h1><ul class='list-disc list-inside flex flex-col gap-2 ps-[10px]'><li>Custom Behaviour Tree&nbsp;<span class='font-medium'>built from the ground up</span>&nbsp;with behaviour mimicking&nbsp;<em>RE2’s Mr. X</em>&nbsp;within Unity. </li><li>Various Node types such as&nbsp;<span class='font-medium'>Composite</span>,&nbsp;<span class='font-medium'>Action</span>,&nbsp;<span class='font-medium'>Decorator</span>&nbsp;and more to create patrol, search, chase and attack behaviours.</li><li><span class='font-medium'>Room System</span>&nbsp;with AI Door handling for Room-to-Room navigation.</li><li><span class='font-medium'>Door Handling solution</span>&nbsp;enabling the AI to interact with and navigate through Doors effectively.</li><li><span class='font-medium'>Object-Oriented architecture</span>&nbsp;using inheritance to define type-based and&nbsp;<span class='font-medium'>abstract logic</span>.</li><li>Room&nbsp;<span class='font-medium'>real-time lighting optimisation</span>&nbsp;techniques.</li><li><span class='font-medium'>Fully playable vertical slice</span>&nbsp;with&nbsp;<span class='font-medium'>traditional gameplay systems</span>&nbsp;to test AI implementation in an in-game setting.</li></ul>",
             "headerImage": "/images/re2_bt_action.webp",
             "images": [
                 "/images/pcgcity.webp",
