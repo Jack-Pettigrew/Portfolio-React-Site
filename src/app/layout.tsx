@@ -4,6 +4,7 @@ import './globals.css'
 import ProfileImage from '../components/ProfileImage'
 import SocialLinks from '../components/SocialLinks';
 import CardLinks from '@/components/CardLinks';
+import Link from 'next/link';
 
 const font = Poppins({
   subsets: ["latin"],
@@ -29,7 +30,9 @@ export default function RootLayout({
         <aside id='sidebar' className='relative lg:sticky lg:top-0 flex flex-col justify-center items-center basis-1/5 lg:max-h-screen px-10 bg-slate-100'>
           {/* Profile */}
           <div className='flex flex-col items-center gap-3'>
-            <ProfileImage imageSrc='/logo_450.webp' />
+            <Link href="/">
+              <ProfileImage imageSrc='/logo_450.webp' />
+            </Link>
 
             <h1 className='w-auto text-center text-2xl'>Jack Pettigrew 👨🏼‍💻</h1>
 
