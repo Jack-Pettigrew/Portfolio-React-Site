@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/jackpettigrew/GitHub/Portfolio-React-Site/src/app/layout\":[\"static/media/c04551857776278f-s.p.woff2\",\"static/media/916d3686010a8de2-s.p.woff2\",\"static/media/7777133e901cd5ed-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
