@@ -1,22 +1,24 @@
-import CardImageHeader from "@/components/CardImageHeader";
+import ImageHeaderCard from "@/components/ImageHeaderCard";
+import TestContentModal from "@/components/TestContentModal";
 import WhatImWorkingOn from "@/components/WhatImWorkingOn";
 import Link from "next/link";
 
 export default function index() {
 
     return (
-        <div className="flex flex-col gap-10 w-full h-full justify-center">
+        <div className="relative flex flex-col gap-10 w-full h-full justify-center">
+            {/* <TestContentModal /> */}
 
             <WhatImWorkingOn projectImageRoute="/images/re2_bt_action.webp" projectLink="/">
                 <h1 className="text-xl mb-2">Mr X AI - Behaviour Tree Study</h1>
                 <p>A video game AI study developing a Behaviour Tree from scratch to recreate the Mr X stalker system from Resident Evil 2 Remake (2019) within Unity.</p>
             </WhatImWorkingOn>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col px-5 gap-2">
                 <h1 className="text-center cursor-default">About Me 👋🏻</h1>
 
                 <div className="flex flex-col lg:flex-row w-full gap-3">
-                    <CardImageHeader imageSrc="/images/pcgcity.webp" cardHeaderIcon="💻">
+                    <ImageHeaderCard imageSrc="/images/pcgcity.webp" cardHeaderIcon="💻">
                         <p className="m-auto">
                             <a
                                 className="font-bold duration-[200ms] underline underline-offset-4 decoration-wavy decoration-[#bc59fd] hover:text-[#bc59fd] hover:decoration-[#b75efe]"
@@ -38,9 +40,9 @@ export default function index() {
                             with a passion and desire to contribute to the fantastical world
                             of video games.
                         </p>
-                    </CardImageHeader>
+                    </ImageHeaderCard>
 
-                    <CardImageHeader imageSrc="/images/scifihallway.webp" cardHeaderIcon="🕹️">
+                    <ImageHeaderCard imageSrc="/images/scifihallway.webp" cardHeaderIcon="🕹️">
                         <p className="m-auto">
                             <a
                                 className="font-bold duration-[200ms] underline underline-offset-4 decoration-wavy decoration-[#bc59fd] hover:text-[#bc59fd] hover:decoration-[#dcb9fa]"
@@ -53,9 +55,9 @@ export default function index() {
                             making content about all things video games and video game
                             development.
                         </p>
-                    </CardImageHeader>
+                    </ImageHeaderCard>
 
-                    <CardImageHeader imageSrc="/images/actionshot.jpg" cardHeaderIcon="⌨️">
+                    <ImageHeaderCard imageSrc="/images/actionshot.jpg" cardHeaderIcon="⌨️">
                         <p>
                             Developing various{" "}
                             <Link
@@ -73,7 +75,7 @@ export default function index() {
                             </Link>.
                         </p>
                         <p className="mt-3 text-[0.5em]">(...some even have a purpose)</p>
-                    </CardImageHeader>
+                    </ImageHeaderCard>
                 </div>
             </div>
         </div >

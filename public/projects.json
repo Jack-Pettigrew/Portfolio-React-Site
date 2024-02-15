@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "title": "RE2 Mr. X AI Study - Behaviour Trees",
+            "tagline": "A video game AI study recreating the Mr X stalker system from Resident Evil 2 Remake (2019)",
+            "tools": [
+                "unity",
+                "blender",
+                "aesprite",
+                "photoshop"
+            ],
+            "links": {
+                "itchio": "https://pixeldump.itch.io/"
+            },
+            "description": "A technical exploration and recreation of the 'Mr. X' AI system from Resident Evil 2 Remake (2019) using my own implementation of a Behaviour Tree (BT) system. This project serves as my first dive into video game AI by creating a BT from the ground up.\n\nMr. X is a video game AI that hunts the player through the level, stalking the halls and searching rooms. I've attempted to reproduce that behaviour to learn how to create a basic BT system.",
+            "headerImage": "/images/re2_bt_action.webp",
+            "images": [
+                "/images/pcgcity.webp",
+                "/images/re2_bt_action.webp",
+                "/images/scifihallway.webp",
+                "/images/actionshot.jpg",
+                "/images/actionshot.jpg",
+                "/images/actionshot.jpg"
+            ],
+            "videos": []
+        }
+    ]
+}

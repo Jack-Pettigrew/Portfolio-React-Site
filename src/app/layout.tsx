@@ -58,7 +58,7 @@ export default function RootLayout({
           </div>
         </aside>
 
-        <main id='page-content' className="basis-4/5 p-5">
+        <main id='page-content' className="basis-4/5">
           {children}
         </main>
       </body>
