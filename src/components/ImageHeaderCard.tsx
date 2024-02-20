@@ -1,9 +1,9 @@
 import { ReactNode } from "react";
 
-export default function ImageHeaderCard({ children, imageSrc, cardHeaderIcon }: { children?: ReactNode, imageSrc: string, cardHeaderIcon?: string }) {
+export default function ImageHeaderCard({ children, imageSrc, cardHeaderIcon, className }: { children?: ReactNode, imageSrc: string, cardHeaderIcon?: string, className?:string }) {
 
     return (
-        <div className="group flex flex-col basis-full rounded-xl overflow-hidden shadow-[3px_3px_10px_0px_rgba(0,0,0,0.2)]">
+        <div className={className + " group flex flex-col basis-full lg:max-w-80 rounded-xl overflow-hidden shadow-[3px_3px_10px_0px_rgba(0,0,0,0.2)]"}>
             <div className="relative text-pretty">
                 <img src={imageSrc} className={"w-full aspect-[6/2] object-cover object-center"} />
                 {cardHeaderIcon &&
