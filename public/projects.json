@@ -1,6 +1,7 @@
 {
     "projects": [
         {
+            "id": 1,
             "title": "RE2 Mr. X AI Study - Behaviour Trees",
             "tagline": "A video game AI study recreating the Mr X stalker system from Resident Evil 2 Remake (2019)",
             "tools": [
