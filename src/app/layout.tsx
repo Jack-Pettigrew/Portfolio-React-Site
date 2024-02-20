@@ -31,7 +31,7 @@ export default function RootLayout({
           {/* Profile */}
           <div className='flex flex-col items-center gap-3'>
             <Link href="/">
-              <ProfileImage imageSrc='/logo_450.webp' />
+              <ProfileImage imageSrc='/images/profile-images/logo_450.webp' />
             </Link>
 
             <h1 className='w-auto text-center text-2xl'>Jack Pettigrew 👨🏼‍💻</h1>
