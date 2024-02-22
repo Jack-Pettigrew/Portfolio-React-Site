@@ -8,6 +8,7 @@ export default function index() {
     return (
         <div className="flex w-full h-full justify-center">
             <div className="flex flex-col gap-3 p-5 w-full max-w-[1200px]">
+                {/* Header */}
                 <div id="project-header" className={project.headerImage ? "relative flex h-[250px]" : ""}>
                     {project.headerImage && <Image src={project.headerImage} fill={true} alt="Project header image" className="z-[-10] object-cover object-center rounded-xl" />}
 
@@ -17,10 +18,11 @@ export default function index() {
                     </div>
                 </div>
 
-                <div className="flex gap-2">
+                {/* Content */}
+                <div className="flex flex-col lg:flex-row gap-2">
                     {/*  Sidebar */}
                     <div className="flex flex-col gap-2">
-                        <Card id="links" className="h-fit w-48 shrink-0">
+                        <Card id="links" className="h-fit lg:w-48 shrink-0">
                             <h2>Links</h2>
                             {project.links.map(function (element, index) {
                                 return (
@@ -31,7 +33,7 @@ export default function index() {
                             })}
                         </Card>
 
-                        <Card id="tools" className="h-fit w-48 shrink-0">
+                        <Card id="tools" className="h-fit lg:w-48 shrink-0">
                             <h2>Tools</h2>
                             <ul className="list-disc list-inside">
                                 {project.tools.map(function (element, index) {
