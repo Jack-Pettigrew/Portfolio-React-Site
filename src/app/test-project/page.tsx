@@ -9,10 +9,10 @@ export default function index() {
         <div className="flex w-full h-full justify-center">
             <div className="flex flex-col gap-3 p-5 w-full max-w-[1200px]">
                 {/* Header */}
-                <div id="project-header" className={project.headerImage ? "relative flex h-[250px]" : ""}>
-                    {project.headerImage && <Image src={project.headerImage} fill={true} alt="Project header image" className="z-[-10] object-cover object-center rounded-xl" />}
+                <div id="project-header" className={project.headerImage ? "relative flex h-[300px] lg:h-[250px]" : ""}>
+                    {project.headerImage && <Image src={project.headerImage} fill={true} alt="Project header image" className=" z-[-10] object-cover object-center rounded-xl" priority />}
 
-                    <div className={project.headerImage ? "m-2 px-3 py-2 self-end text-bottom text-white bg-black/20 rounded-xl backdrop-blur-lg" : ""}>
+                    <div className={project.headerImage ? " m-2 px-3 py-2 self-end text-bottom text-white bg-black/20 rounded-xl backdrop-blur-lg" : ""}>
                         <h1>{project.title}</h1>
                         <p>{project.tagline}</p>
                     </div>
@@ -61,7 +61,7 @@ export default function index() {
                             {
                                 project.images.map(function (element, index) {
                                     return (
-                                        <img key="index" src={element} width={200} className="aspect-video object-cover object-center rounded-xl" />
+                                        <img key={index} src={element} width={200} className="aspect-video object-cover object-center rounded-xl" />
                                     )
                                 })
                             }

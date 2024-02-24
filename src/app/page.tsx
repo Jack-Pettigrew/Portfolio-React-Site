@@ -15,7 +15,7 @@ export default function index() {
             <div className="flex flex-col px-5 gap-2">
                 <h1 className="text-center cursor-default">About Me 👋🏻</h1>
 
-                <div className="flex flex-col lg:flex-row w-full gap-3">
+                <div className="flex flex-col lg:flex-row lg:justify-center w-full gap-3">
                     <ImageHeaderCard imageSrc="/images/pcgcity.webp" cardHeaderIcon="💻">
                         <p className="m-auto">
                             <a
