@@ -16,7 +16,7 @@ export default function WhatImWorkingOn({ children, projectImageRoute, projectLi
 
 
             <Link href={projectLink} className="hidden lg:block">
-                <div className="flex h-full rounded-xl overflow-hidden shadow-[3px_3px_10px_0px_rgba(0,0,0,0.2)]">
+                <div className="flex h-full rounded-xl overflow-hidden shadow-default">
                     <div className="bg-slate-100 p-5 min-w-80 max-w-96 min-h-48 overflow-hidden">
                         {children}
                     </div>
