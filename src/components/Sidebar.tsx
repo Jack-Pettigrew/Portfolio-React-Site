@@ -40,7 +40,7 @@ export default function Sidebar() {
     );
 
     const DesktopSidebar = (
-        <aside id='sidebar' className='hidden lg:flex relative lg:sticky lg:top-0 flex-col justify-center items-center basis-1/5 lg:max-h-screen px-10 bg-slate-100'>
+        <aside id='sidebar' className='hidden lg:flex relative lg:sticky lg:top-0 flex-col justify-center items-center basis-1/5 lg:max-h-screen px-10 bg-slate-100 dark:bg-slate-700 dark:text-white'>
             {/* Profile */}
             <div className='flex flex-col items-center gap-3'>
                 <Link href="/">

@@ -11,7 +11,7 @@ export default function ImageHeaderCard({ children, imageSrc, cardHeaderIcon, cl
                 }
             </div>
 
-            <div className={(cardHeaderIcon !== undefined ? "pt-8" : "pt-5") + " p-5 w-full h-full"}>
+            <div className={(cardHeaderIcon !== undefined ? "pt-8" : "pt-5") + " p-5 w-full h-full dark:bg-slate-700 dark:text-white"}>
                 {children}
             </div>
         </div>
