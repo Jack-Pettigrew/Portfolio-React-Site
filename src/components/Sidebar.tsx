@@ -7,26 +7,14 @@ import SocialLinks from "./SocialLinks";
 import { useEffect, useState } from "react";
 
 export default function Sidebar() {
-    const [isMobile, setIsMobile] = useState(false);
     const [toggledSidebar, setToggledSidebar] = useState(false);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 1024);
-        };
-
-        handleResize();
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
             setToggledSidebar(window.scrollY > 50);
         };
 
+        handleScroll();
         window.addEventListener('scroll', handleScroll);
 
         return () => {
@@ -35,8 +23,8 @@ export default function Sidebar() {
     }, []);
 
     const mobileSidebar = (
-        <aside id="sidebar" className="sticky top-0 z-10">
-            <div id="sidebar-content" className={"flex justify-between items-center duration-100 mb-0 px-3 py-3 bg-purple-500 backdrop-blur-lg shadow-default " + (isMobile && toggledSidebar ? "m-5 rounded-xl" : "")}>
+        <aside id="sidebar" className="lg:hidden sticky top-0 z-10">
+            <div id="sidebar-content" className={"flex justify-between items-center duration-100 mb-0 px-3 py-3 bg-purple-500 backdrop-blur-lg shadow-default " + (toggledSidebar ? "m-5 rounded-xl" : "")}>
                 <Link href='/' className="flex gap-3 items-center">
                     <ProfileImage imageSrc="/images/profile-images/logo_225.webp" size={64} roundedStrength="xl" />
                     <h1 className="text-white">Jack Pettigrew</h1>
@@ -51,8 +39,8 @@ export default function Sidebar() {
         </aside>
     );
 
-    const desktopSidebar = (
-        <aside id='sidebar' className='relative lg:sticky lg:top-0 flex flex-col justify-center items-center basis-1/5 lg:max-h-screen px-10 bg-slate-100'>
+    const DesktopSidebar = (
+        <aside id='sidebar' className='hidden lg:flex relative lg:sticky lg:top-0 flex-col justify-center items-center basis-1/5 lg:max-h-screen px-10 bg-slate-100'>
             {/* Profile */}
             <div className='flex flex-col items-center gap-3'>
                 <Link href="/">
@@ -87,5 +75,11 @@ export default function Sidebar() {
         </aside>
     );
 
-    return isMobile ? mobileSidebar : desktopSidebar;
+    return (
+        <>
+            {mobileSidebar}
+            {DesktopSidebar}
+        </>
+    );
+
 }
