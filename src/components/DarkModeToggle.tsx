@@ -21,7 +21,7 @@ export default function DarkModeToggle() {
     }, [isToggled]);
 
     return (
-        <div className='fixed top-0 right-0 z-10 mx-5 my-3'>
+        <div className='fixed bottom-0 right-0 lg:left-0 lg:right-auto z-10 mx-5 my-3'>
             <div className='group rounded-full bg-purple-500 p-2 bg-gradient-to-r from-indigo-500 hover:cursor-pointer shadow-default' onClick={() => toggleDarkMode()}>
                 {
                     !isToggled ?
