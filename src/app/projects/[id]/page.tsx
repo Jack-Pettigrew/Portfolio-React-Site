@@ -1,9 +1,22 @@
 import Card from "@/components/Card";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 import projectsFile from "public/projects.json";
 
-export default function index() {
-    const project = projectsFile.projects[0];
+export async function generateStaticParams() {
+    return projectsFile.projects.map((ticket) => ({
+        id: ticket.id.toString()
+    }))
+}
+
+export default function index({ params }: { params: { id : number } }) {
+    const id = params.id;
+    const project = projectsFile.projects[id - 1];
+
+    if (project == undefined)
+    {
+        notFound();
+    }
 
     return (
         <div className="flex w-full h-full justify-center">

@@ -7,7 +7,7 @@ export default function index() {
     return (
         <div className="relative flex flex-col gap-10 w-full h-full justify-center">
 
-            <WhatImWorkingOn projectImageRoute="/images/re2_bt_action.webp" projectLink="/test-project">
+            <WhatImWorkingOn projectImageRoute="/images/re2_bt_action.webp" projectLink={"/projects/1"}>
                 <h1 className="text-xl mb-2">Mr X AI - Behaviour Tree Study</h1>
                 <p>A video game AI study developing a Behaviour Tree from scratch to recreate the Mr X stalker system from Resident Evil 2 Remake (2019) within Unity.</p>
             </WhatImWorkingOn>
