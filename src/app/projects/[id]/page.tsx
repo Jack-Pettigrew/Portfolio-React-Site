@@ -1,3 +1,4 @@
+import Breadcrumb from "@/components/Breadcrumb";
 import Card from "@/components/Card";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -22,6 +23,7 @@ export default function index({ params }: { params: { id : number } }) {
     return (
         <div className="flex w-full h-full justify-center">
             <div className="flex flex-col gap-3 p-5 w-full max-w-[1200px]">
+                <Breadcrumb customPageName={project.title} />
                 {/* Header */}
                 <div id="project-header" className={project.headerImage ? "relative flex h-[300px] lg:h-[250px]" : ""}>
                     {project.headerImage && <Image src={project.headerImage} fill={true} alt="Project header image" className=" object-cover object-center rounded-xl" priority />}
