@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import projectsFile from "public/projects.json";
 
+// Gerenate static project pages at build time
 export async function generateStaticParams() {
     return projectsFile.projects.map((ticket) => ({
         id: ticket.id.toString()
