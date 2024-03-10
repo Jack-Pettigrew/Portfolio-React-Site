@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function index() {
 
     return (
-        <div className="relative flex flex-col gap-10 w-full h-full justify-center">
+        <div className="relative flex flex-col gap-10 w-full h-full justify-center pt-5 lg:pt-0">
 
             <WhatImWorkingOn projectImageRoute="/images/re2_bt_action.webp" projectLink={"/projects/1"}>
                 <h1 className="text-xl mb-2">Mr X AI - Behaviour Tree Study</h1>

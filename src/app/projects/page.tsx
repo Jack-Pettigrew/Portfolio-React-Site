@@ -8,7 +8,7 @@ export default function projects() {
 
     return (
         <div className="flex flex-col">
-            <div className="lg:sticky lg:top-2 lg:z-10 bg-white/75 w-fit rounded-lg backdrop-blur-lg mt-3 mx-5">
+            <div className="lg:sticky lg:top-2 lg:z-10 bg-white/50 w-fit rounded-lg backdrop-blur-md mt-3 mx-5 p-1">
                 <Breadcrumb />
             </div>
 

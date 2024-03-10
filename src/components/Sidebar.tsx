@@ -49,17 +49,18 @@ export default function Sidebar() {
 
                 <h1 className='w-auto text-center text-2xl'>Jack Pettigrew 👨🏼‍💻</h1>
 
-                <div className='text-center'>
+                <div className='text-center py-2'>
                     <p className='text-sm italic'>Sofware Developer.</p>
                     <p className='text-sm italic'>Full Stack.</p>
                     <p className='text-sm italic'>Aspiring Game Developer.</p>
                 </div>
 
-                <div className="flex flex-col gap-3">
-                    <CardLinks title="Games" href="/games" />
+                <div className="flex flex-col gap-3 py-1">
+                    {/* <CardLinks title="Games" href="/games" /> */}
+                    <CardLinks title="Home" href="/" />
                     <CardLinks title="Projects" href="/projects" />
                     <CardLinks title="YouTube" href="/youtube" />
-                    <CardLinks title="Other" href="/other" />
+                    {/* <CardLinks title="Other" href="/other" /> */}
                 </div>
 
                 <nav className='text-center mt-3'>
@@ -69,7 +70,7 @@ export default function Sidebar() {
             </div>
 
             {/* Tagline */}
-            <div className='flex pt-3 lg:pt-10 pb-5'>
+            <div className='flex pt-5'>
                 <p className='hover:animate-pulse'>Powered by Coffee <span className='text-2xl pl-1'>☕️</span></p>
             </div>
         </aside>
