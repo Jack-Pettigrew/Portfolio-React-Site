@@ -26,7 +26,7 @@ export default function Sidebar() {
         <aside id="sidebar" className="lg:hidden sticky top-0 z-10">
             <div id="sidebar-content" className={"flex justify-between items-center duration-100 mb-0 px-3 py-3 bg-purple-500 backdrop-blur-lg shadow-default " + (toggledSidebar ? "m-5 rounded-xl" : "")}>
                 <Link href='/' className="flex gap-3 items-center">
-                    <ProfileImage imageSrc="/images/profile-images/logo_225.webp" size={64} roundedStrength="xl" />
+                    <ProfileImage imageSrc="/images/profile-images/image_200.webp" size={64} roundedStrength="xl" />
                     <h1 className="text-white">Jack Pettigrew</h1>
                 </Link>
 
@@ -44,7 +44,7 @@ export default function Sidebar() {
             {/* Profile */}
             <div className='flex flex-col items-center gap-3'>
                 <Link href="/">
-                    <ProfileImage imageSrc='/images/profile-images/logo_450.webp' size={225} />
+                    <ProfileImage imageSrc='/images/profile-images/image_800.webp' size={225} />
                 </Link>
 
                 <h1 className='w-auto text-center text-2xl'>Jack Pettigrew 👨🏼‍💻</h1>
