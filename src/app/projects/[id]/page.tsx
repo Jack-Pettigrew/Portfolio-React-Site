@@ -1,5 +1,6 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import Card from "@/components/Card";
+import ImageCarousel from "@/components/ImageCarousel";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import projectsFile from "public/projects.json";
@@ -11,12 +12,11 @@ export async function generateStaticParams() {
     }))
 }
 
-export default function index({ params }: { params: { id : number } }) {
+export default function index({ params }: { params: { id: number } }) {
     const id = params.id;
     const project = projectsFile.projects[id - 1];
 
-    if (project == undefined)
-    {
+    if (project == undefined) {
         notFound();
     }
 
@@ -68,21 +68,11 @@ export default function index({ params }: { params: { id : number } }) {
                     <div className="flex flex-col gap-3">
                         <Card className="h-fit">
                             <div dangerouslySetInnerHTML={{ __html: project.description }}>
-                                {/* <p className="whitespace-pre-line">{project.description}</p> */}
+                                {/* Project Content */}
                             </div>
                         </Card>
 
-                        {/* Images Carousel */}
-                        <div id="gallery" className="flex w-full gap-1 overflow-auto">
-                            {
-                                project.images.map(function (element, index) {
-                                    return (
-                                        <img key={index} src={element} width={200} className="aspect-video object-cover object-center rounded-xl" />
-                                    )
-                                })
-                            }
-                        </div>
-
+                        <ImageCarousel images={project.images} />
                     </div>
                 </div>
             </div>
