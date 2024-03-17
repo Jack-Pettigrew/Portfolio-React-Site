@@ -5,8 +5,8 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import projectsFile from "public/projects.json";
 
-// Cloudflare loves this
-export const runtime = 'edge';
+// Tell cloudflare not to SSR and Streaming mode for this page
+export const dynamic = "force-static";
 
 // https://logsnag.com/blog/deploying-nextjs-13-app-dir-to-cloudflare-pages
 export const dynamicParams = false;
