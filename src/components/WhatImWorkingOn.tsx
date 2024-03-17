@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
 import ImageHeaderCard from "./ImageHeaderCard";
-import { CaretRight } from "@phosphor-icons/react/dist/ssr/CaretRight";
 import SeeMoreButton from "./SeeMoreButton";
 
 export default function WhatImWorkingOn({ children, projectImageRoute, projectLink }: { children: ReactNode, projectImageRoute: string, projectLink: string }) {
@@ -24,7 +23,7 @@ export default function WhatImWorkingOn({ children, projectImageRoute, projectLi
                         </div>
 
                         <div className="relative flex bg-black w-80 h-full overflow-hidden">
-                            <Image src={projectImageRoute} fill={true} alt="Most recent work image" className="object-cover object-top" />
+                            <Image src={projectImageRoute} fill={true} placeholder="empty" alt="Most recent work image" className="object-cover object-top" />
                         </div>
                     </div>
                 </Link>
