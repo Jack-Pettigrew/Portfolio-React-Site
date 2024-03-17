@@ -5,6 +5,12 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import projectsFile from "public/projects.json";
 
+// Cloudflare loves this
+export const runtime = 'edge';
+
+// https://logsnag.com/blog/deploying-nextjs-13-app-dir-to-cloudflare-pages
+export const dynamicParams = false;
+
 // Gerenate static project pages at build time
 export async function generateStaticParams() {
     return projectsFile.projects.map((ticket) => ({
