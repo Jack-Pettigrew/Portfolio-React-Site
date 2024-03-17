@@ -1,13 +1,14 @@
 "use client"
 
-import { useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ImageViewer from './ImageViewer';
 
-export default function ImageCarousel({ images }: { images: Array<string> }) {
+export default function ImageCarousel({ images = [], videos = [] }: { images?: Array<string>, videos?: Array<string> }) {
     const [imageIndex, setImageIndex] = useState(0);
     const [imageSrc, setImageSrc] = useState("");
     const [viewerVisibility, setViewerVisibility] = useState(false);
-    
+    let mediaCount = -1;
+
     const showImage = (imageSrc: string, index: number) => {
         setImageIndex(index);
         setImageSrc(imageSrc);
@@ -16,30 +17,48 @@ export default function ImageCarousel({ images }: { images: Array<string> }) {
 
     const nextImage = () => {
         setImageIndex((imageIndex + 1) % images.length);
-        setImageSrc(images[imageIndex]);
     };
 
     const prevImage = () => {
         // JavaScript Modulo is broken for negatives???????
         // setImageIndex((imageIndex - 1) % images.length);
-        
+
         setImageIndex((imageIndex - 1) < 0 ? images.length - 1 : imageIndex - 1);
-        setImageSrc(images[imageIndex]);
     };
+
+    useEffect(function () {
+        setImageSrc(images[imageIndex]);
+    }, [imageIndex]);
 
     return (
         <>
-            <div id="image-carousel" className="flex w-full gap-1 overflow-auto">
+            <div id="image-carousel" className="grid gap-2 grid-cols-2 lg:grid-cols-4">
+                {
+                    videos.map(function (element, index) {
+                        mediaCount++;
+                        return (
+                            <div key={index} className={mediaCount == 0 ? 'lg:row-span-2 lg:col-span-2' : ''}>
+                                <video controls controlsList='nodownload' className='w-full h-full aspect-vide rounded-xl'>
+                                    <source src={element} />
+                                </video>
+                            </div>
+                        );
+                    })
+                }
+
                 {
                     images.map(function (element, index) {
+                        mediaCount++;
                         return (
-                            <img key={index} src={element} width={200} className="aspect-video object-cover object-center rounded-xl cursor-pointer" onClick={() => showImage(element, index)} />
+                            <div key={index} className={mediaCount == 0 ? 'lg:row-span-2 lg:col-span-2' : ''}>
+                                <img src={element} width={200} className="w-full h-full aspect-video object-cover object-center rounded-xl cursor-pointer" onClick={() => showImage(element, index)} />
+                            </div>
                         )
                     })
                 }
             </div>
 
-            <ImageViewer imagePath={imageSrc} className={ viewerVisibility ? 'block' : 'hidden' } onNextButton={nextImage} onPrevButton={prevImage} onOutsideClick={() => setViewerVisibility(false)} />
+            <ImageViewer imagePath={imageSrc} className={viewerVisibility ? 'block' : 'hidden'} onNextButton={nextImage} onPrevButton={prevImage} onOutsideClick={() => setViewerVisibility(false)} />
         </>
     )
 }

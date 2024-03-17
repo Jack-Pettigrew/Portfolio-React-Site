@@ -72,7 +72,7 @@ export default function index({ params }: { params: { id: number } }) {
                             </div>
                         </Card>
 
-                        <ImageCarousel images={project.images} />
+                        <ImageCarousel images={project.images} videos={project.videos} />
                     </div>
                 </div>
             </div>

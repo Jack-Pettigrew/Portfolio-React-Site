@@ -10,10 +10,10 @@ export default function ImageViewer({ className, imagePath = '', onNextButton, o
     onOutsideClick: CallableFunction
 }) {
     return (
-        <div id="image-viewer" className={"fixed top-0 left-0 w-full h-full z-20 p-20 backdrop-blur-xl select-none " + className}>
+        <div id="image-viewer" className={"fixed top-0 left-0 w-screen h-screen z-20 p-20 backdrop-blur-xl select-none " + className}>
             <div onClick={() => onOutsideClick()} className="absolute top-0 left-0 w-full h-full"></div>
             <div className="relative flex w-full h-full">
-                <div 
+                <div
                     className="absolute left-[2%] top-[calc(50%-16px)] cursor-pointer duration-200 bg-white/30 hover:bg-white/100 shadow-default rounded-full p-2 z-10"
                     onClick={() => onPrevButton()}
                 >
@@ -21,8 +21,8 @@ export default function ImageViewer({ className, imagePath = '', onNextButton, o
                 </div>
 
                 {imagePath && <Image id="image-viewer-image" className="rounded-xl" src={imagePath} alt="" fill />}
-                
-                <div 
+
+                <div
                     className="absolute right-[2%] top-[calc(50%-16px)] cursor-pointer duration-200 bg-white/30 hover:bg-white/100 shadow-default rounded-full p-2 z-10"
                     onClick={() => onNextButton()}
                 >
