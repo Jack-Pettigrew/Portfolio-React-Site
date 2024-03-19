@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import ImageViewer from './ImageViewer';
 
-export default function ImageCarousel({ images = [], videos = [] }: { images?: Array<string>, videos?: Array<string> }) {
+export default function ImageCarousel({ images = [], videos = [], youtubeVideoIds = [] }: { images?: Array<string>, videos?: Array<string>, youtubeVideoIds?: Array<string> }) {
     const [imageIndex, setImageIndex] = useState(0);
     const [imageSrc, setImageSrc] = useState("");
     const [viewerVisibility, setViewerVisibility] = useState(false);
@@ -33,6 +33,15 @@ export default function ImageCarousel({ images = [], videos = [] }: { images?: A
     return (
         <>
             <div id="image-carousel" className="grid gap-2 grid-cols-2 lg:grid-cols-4">
+                {
+                    youtubeVideoIds.map(function (element, index) {
+                        mediaCount++;
+                        return (
+                            <iframe key={index} className={(mediaCount == 0 ? 'lg:row-span-2 lg:col-span-2' : '') + ' rounded-xl w-full h-full'} src={"https://www.youtube.com/embed/" + element} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        );
+                    })
+                }
+
                 {
                     videos.map(function (element, index) {
                         mediaCount++;

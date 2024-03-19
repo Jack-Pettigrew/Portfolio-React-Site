@@ -8,6 +8,7 @@ import projectsFile from "public/projects.json";
 // Tell cloudflare not to SSR and Streaming mode for this page
 export const dynamic = "force-static";
 
+// https://github.com/cloudflare/next-on-pages/blob/main/packages/next-on-pages/docs/gotchas.md
 // https://logsnag.com/blog/deploying-nextjs-13-app-dir-to-cloudflare-pages
 export const dynamicParams = false;
 
@@ -78,7 +79,7 @@ export default function index({ params }: { params: { id: number } }) {
                             </div>
                         </Card>
 
-                        <ImageCarousel images={project.images} videos={project.videos} />
+                        <ImageCarousel images={project.images} videos={project.videos} youtubeVideoIds={project.youtubeVideoIds} />
                     </div>
                 </div>
             </div>
