@@ -37,7 +37,7 @@ export default function ImageCarousel({ images = [], videos = [], youtubeVideoId
                     youtubeVideoIds.map(function (element, index) {
                         mediaCount++;
                         return (
-                            <iframe key={index} className={(mediaCount == 0 ? 'lg:row-span-2 lg:col-span-2' : '') + ' rounded-xl w-full h-full'} src={"https://www.youtube.com/embed/" + element} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe key={index} className={(mediaCount == 0 ? 'lg:row-span-2 lg:col-span-2' : '') + ' rounded-xl w-full h-full'} src={"https://www.youtube.com/embed/" + element} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                         );
                     })
                 }
