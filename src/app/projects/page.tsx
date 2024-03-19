@@ -9,7 +9,7 @@ export default function projects() {
     return (
         <div className="flex flex-col items-center">
             <div className="flex flex-col gap-1 py-2 px-5">
-                <div className="lg:sticky lg:top-2 lg:z-10 bg-white/50 dark:bg-slate-500/25 rounded-lg backdrop-blur-md mt-3 mb-1 lg:mt-0 lg:mb-3 px-3 py-2 w-fit">
+                <div className="lg:sticky lg:top-2 lg:z-10 bg-white/50 dark:bg-slate-500/25 rounded-lg backdrop-blur-md mt-3 mb-1 lg:mt-0 lg:mb-1 px-3 py-2 w-fit">
                     <Breadcrumb />
                 </div>
 
@@ -27,6 +27,5 @@ export default function projects() {
                 </div>
             </div>
         </div>
-
     )
 }
