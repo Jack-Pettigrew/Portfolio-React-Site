@@ -1,6 +1,6 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import Card from "@/components/Card";
-import ImageCarousel from "@/components/ImageCarousel";
+import ImageGallery from "@/components/ImageGallery";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import projectsFile from "public/projects.json";
@@ -79,7 +79,7 @@ export default function index({ params }: { params: { id: number } }) {
                             </div>
                         </Card>
 
-                        <ImageCarousel images={project.images} videos={project.videos} youtubeVideoIds={project.youtubeVideoIds} />
+                        <ImageGallery images={project.images} videos={project.videos} youtubeVideoIds={project.youtubeVideoIds} />
                     </div>
                 </div>
             </div>

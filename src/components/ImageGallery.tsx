@@ -4,11 +4,7 @@ import { useEffect, useState } from 'react';
 import ImageViewer from './ImageViewer';
 import Image from 'next/image';
 
-type CachedImagesType = {
-    [key: string]: string
-}
-
-export default function ImageCarousel({ images = [], videos = [], youtubeVideoIds = [] }: { images?: Array<string>, videos?: Array<string>, youtubeVideoIds?: Array<string> }) {
+export default function ImageGallery({ images = [], videos = [], youtubeVideoIds = [] }: { images?: Array<string>, videos?: Array<string>, youtubeVideoIds?: Array<string> }) {
     const [imageIndex, setImageIndex] = useState(0);
     const [cachedImages, setCachedImages] = useState<{[key:string]:string}>({});
     const [viewerVisibility, setViewerVisibility] = useState(false);
