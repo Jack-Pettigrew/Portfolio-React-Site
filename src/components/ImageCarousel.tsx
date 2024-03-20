@@ -3,15 +3,37 @@
 import { useEffect, useState } from 'react';
 import ImageViewer from './ImageViewer';
 
+type CachedImagesType = {
+    [key: string]: string
+}
+
 export default function ImageCarousel({ images = [], videos = [], youtubeVideoIds = [] }: { images?: Array<string>, videos?: Array<string>, youtubeVideoIds?: Array<string> }) {
     const [imageIndex, setImageIndex] = useState(0);
-    const [imageSrc, setImageSrc] = useState("");
+    const [cachedImages, setCachedImages] = useState<{[key:string]:string}>({});
     const [viewerVisibility, setViewerVisibility] = useState(false);
+
     let mediaCount = -1;
 
+    useEffect(() => {
+        preloadImages(images);
+    }, images);
+
+    const preloadImages = async (imageUrls: Array<string>) => {
+        for (const url of imageUrls) {
+            await loadImage(url);  
+        }
+    };
+
+    const loadImage = async (url: string) => {
+        if (!cachedImages[url]) {
+            const response = await fetch(url);
+            const objectURL = URL.createObjectURL(await response.blob());
+            setCachedImages(prevState => ({ ...prevState, [url]: objectURL }));
+        }
+    };
+    
     const showImage = (imageSrc: string, index: number) => {
         setImageIndex(index);
-        setImageSrc(imageSrc);
         setViewerVisibility(true);
     }
 
@@ -25,10 +47,6 @@ export default function ImageCarousel({ images = [], videos = [], youtubeVideoId
 
         setImageIndex((imageIndex - 1) < 0 ? images.length - 1 : imageIndex - 1);
     };
-
-    useEffect(function () {
-        setImageSrc(images[imageIndex]);
-    }, [imageIndex]);
 
     return (
         <>
@@ -67,7 +85,7 @@ export default function ImageCarousel({ images = [], videos = [], youtubeVideoId
                 }
             </div>
 
-            <ImageViewer imagePath={imageSrc} className={viewerVisibility ? 'block' : 'hidden'} onNextButton={nextImage} onPrevButton={prevImage} onOutsideClick={() => setViewerVisibility(false)} />
+            <ImageViewer imagePath={cachedImages[images[imageIndex]]} className={viewerVisibility ? 'block' : 'hidden'} onNextButton={nextImage} onPrevButton={prevImage} onOutsideClick={() => setViewerVisibility(false)} />
         </>
     )
 }
