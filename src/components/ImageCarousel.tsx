@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import ImageViewer from './ImageViewer';
+import Image from 'next/image';
 
 type CachedImagesType = {
     [key: string]: string
@@ -50,12 +51,12 @@ export default function ImageCarousel({ images = [], videos = [], youtubeVideoId
 
     return (
         <>
-            <div id="image-carousel" className="grid gap-2 grid-cols-2 lg:grid-cols-4">
+            <div id="image-carousel" className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 {
                     youtubeVideoIds.map(function (element, index) {
                         mediaCount++;
                         return (
-                            <iframe key={index} className={(mediaCount == 0 ? 'lg:row-span-2 lg:col-span-2' : '') + ' rounded-xl w-full h-full'} src={"https://www.youtube.com/embed/" + element} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                            <iframe key={index} className={(mediaCount == 0 ? 'lg:row-span-2 lg:col-span-2' : '') + ' rounded-xl w-full h-96 md:h-full'} src={"https://www.youtube.com/embed/" + element} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                         );
                     })
                 }
@@ -78,7 +79,7 @@ export default function ImageCarousel({ images = [], videos = [], youtubeVideoId
                         mediaCount++;
                         return (
                             <div key={index} className={mediaCount == 0 ? 'lg:row-span-2 lg:col-span-2' : ''}>
-                                <img src={element} width={200} className="w-full h-full aspect-video object-cover object-center rounded-xl cursor-pointer" onClick={() => showImage(element, index)} />
+                                <Image alt='' src={element} width={200} height={200} className="w-full h-full aspect-video object-cover object-center rounded-xl cursor-pointer" onClick={() => showImage(element, index)} />
                             </div>
                         )
                     })
