@@ -4,6 +4,7 @@
       "id": 1,
       "title": "RE2 Mr. X AI Study - Behaviour Trees",
       "tagline": "A video game AI study recreating the Mr X stalker system from Resident Evil 2 Remake (2019)",
+      "category": "game",
       "tools": ["Unity", "Blender", "Photoshop"],
       "links": [
         {
@@ -45,6 +46,7 @@
       "id": 2,
       "title": "Kings Vs Snakes (Legacy)",
       "tagline": "First University game development assignment used to learn the basics of Unity.",
+      "category": "game",
       "tools": ["C#", "Unity"],
       "links": [],
       "description": "<p>Kings Vs Snakes&nbsp;is a fast paced, Top Down, Side scrolling platformer. It attempts to take two different styles of gameplay and merge them in an assortment of levels with a per-level difficulty progression.</p><p>​</p><p>While this is a simplistic game as it was the first game development assignment I had received in my University career, it was an important first step towards where I am today. It was well received and achieved a grade of 90% - a notable achievement for an initial game development assessment.</p><p>​</p><p>References and playable download can be found&nbsp<span style=\"text-decoration:underline\"><a href=\"https://jackpettigrew.itch.io/kings-vs-snakes-legacy\">here</a></span>.</p><p>​</p><p>Features:</p><ul><li><p>Interactable main menu</p></li><li><p>Custom logo</p></li><li><p>Three different level types (Survive, Escape, Throw)</p></li><li><p>End-game Boss</p></li><li><p>Background music and custom SFX</p></li><li><p>Voice over title cards</p></li></ul><span style=\"text-decoration:underline\"><a href=\"https://jackpettigrew.itch.io/kings-vs-snakes-legacy\">here</a></span>.</p><p>​</p><p>Features:</p><ul><li><p>Interactable main menu</p></li><li><p>Custom logo</p></li><li><p>Three different level types (Survive, Escape, Throw)</p></li><li><p>End-game Boss</p></li><li><p>Background music and custom SFX</p></li><li><p>Voice over title cards</p></li></ul>",
@@ -57,6 +59,7 @@
       "id": 3,
       "title": "PHYSX SIMULATION: Medieval Rugby",
       "tagline": "A phyiscs-based Medieval Rugby prototype using the PhysX SDK.",
+      "category": "game",
       "tools": ["C++", "PhysX"],
       "links": [],
       "description": "<p>A University assessment dedicated to developing a Medieval Rugby physics simulation game.&nbsp;This project showcases just some of the many features the PhysX SDK has to offer; from Cloth simulation&nbsp;to Revolute Joints to Compound Shapes.</p><p>​</p><p>All non-static objects in the simulation have some form of physics being applied to them, for example, Cloth is simulating the effect of wind, obstacles are showing the use of joints, and some materials use physics based properties to simulate friction and restitution.</p><p>​</p><p>Features:</p><ul><li><p>Physics based Player + Enemy movement</p></li><li><p>Physics based materials</p></li><li><p>Cloth Simulation</p></li><li><p>Revolute Joints</p></li><li><p>Collision Filters and Triggers</p></li><li><p>Compound Shapes</p></li><li><p>Debug Info + Actions</p></li></ul>",
@@ -69,6 +72,7 @@
       "id": 4,
       "title": "BitBoy: Out of Control",
       "tagline": "BitBoy: Out of Control is a Third-Person Action Platformer where you must save the System that's 'out of control'.",
+      "category": "game",
       "tools": ["C#", "Unity", "Blender"],
       "links": [],
       "description": "<p class=\"font_8\"><em>BitBoy: Out of Control</em> is a Third-Person Action Platformer where you must save the System that's gone 'out of control'.</p><p class=\"font_8\"><br></p><p class=\"font_8\">Navigate to the top of the System using platforms, avoiding obstacles, and defeating BitBullys in order to&nbsp;save the system.</p><p class=\"font_8\"><br></p><p class=\"font_8\">This is our submission to the <strong>GMTK 2020</strong> <strong>GameJam</strong>, following the theme 'Out of Control'.</p>",
@@ -81,6 +85,7 @@
       "id": 5,
       "title": "I made Fall Guys with Multiplayer (Over 24 Hours)",
       "tagline": "I challenged myself to recreate Fall Guys in 24 Hours.",
+      "category": "game",
       "tools": ["C#", "Blender", "Mirror API"],
       "links": [],
       "description": "<p class=\"font_8\">Fall Guys is a fun, simple and very successful Battle Royale game... so for some reason I challenged myself to make it in Unity over 24 hours... including multiplayer.</p><p class=\"font_8\"><br></p><p class=\"font_8\">This was my first game dev challenge in which all the Fall Guys models, textures, and game mechanics here were created by me in either Blender or Unity. I also had to learn how to make it multiplayer in Unity using Mirror API (an improved version of the depreciated UNET API) - something I had never truly done before! &nbsp;</p><p class=\"font_8\"><br></p><p class=\"font_8\">Thankfully the game dev challenge was a success and I was able to make a simple version of Fall Guys. There are some things I would do differently now I've finished that could have made certain game mechanics even better and the multiplayer can be a little janky at times - but for just over 24 hours of work, it’s not half bad!</p><p class=\"font_8\"><br></p><p class=\"font_8\">See how I made it in <a href=\"https://youtu.be/b95YMcIQSZw\"><u>this</u></a> video!</p>",
@@ -93,6 +98,7 @@
       "id": 6,
       "title": "VR Oculus Quest Dev",
       "tagline": "A project dedicated to studying VR Development on Oculus Quest.",
+      "category": "game",
       "tools": ["C#", "Unity", "Oculus Integration"],
       "links": [],
       "description": "<p>A repository dedicated to learning Oculus Quest development. As of writing, the Quest is a device which currently lacks a wide variety of games/apps specifically due to its recent release and specific hardware requirements - a variable that some PCVR games can not afford to rework their design for.</p><p>​</p><p>Techniques being learnt include but not limited to:</p><ul><li><p>Lighting techniques</p></li><li><p>Geometry and LOD optimisation</p></li><li><p>Occlusion mapping</p></li><li><p>Guardian Boundary as game mechanic</p></li><li><p>VR enhanced game mechanics - such as Holstering or Player involved crafting.</p></li></ul><p>​</p><p>The various Scenes in this project lead from a central Scene - a Dev Hub - each representing a separate testing space for a chosen development area.</p><p>​</p><p>Current Scenes in use:</p><ul><li><p>Dev Hub</p></li><li><p>Matrix Room Test</p></li><li><p>Oculus Boundary Test</p></li><li><p>VR Stealth Mechanics Test</p></li></ul>",
@@ -105,6 +111,7 @@
       "id": 7,
       "title": "Kings Vs Snakes",
       "tagline": "A personal project developing an open-world instalment of my Kings vs Snakes series.",
+      "category": "game",
       "tools": ["C#", "Unity", "Blender"],
       "links": [],
       "description": "<p class=\"font_8\">A personal project developing the third open-world instalment of my Kings vs Snakes series.</p><p class=\"font_8\"><br></p><p class=\"font_8\">It's main purpose is to further my skill set and is currently being developed as a side-project.</p><p class=\"font_8\"><br></p><p class=\"font_8\">Tools:</p><ul class=\"font_8\">  <li><p class=\"font_8\">C#</p></li>  <li><p class=\"font_8\">Unity Game Engine</p></li>  <li><p class=\"font_8\">Blender</p></li></ul>",
@@ -117,6 +124,7 @@
       "id": 8,
       "title": "Procedural Underwater City",
       "tagline": "Procedural Content Generated underwater city.",
+      "category": "game",
       "tools": ["C#", "Unity", "Blender"],
       "links": [],
       "description": "<p class=\"font_8\">Featured in the&nbsp;<a href=\"https://youtu.be/IlOWKgJJ2q4\"><u>University of Lincoln 2018-19 Games Computing Showcase</u></a></p><p>This is a University assignment which asked us to create a scene in Unity that featured elements of Procedural Content Generation while following an underlying theme and optional challenge.</p><p>​</p><p>&#39;Mobile Settlements&#39;&nbsp;was the theme given to us and the optional challenge chosen was&nbsp;&#39;Underwater&#39;. The idea behind the developed scene is to create a large underwater city, inhabited by Fish-people inside a small Fish Bowl,&nbsp;inside a huge Van. A Fish person can be seen towering over the&nbsp;scene observing the Fish settlement, showcasing the overall scale of the scene.</p><p>​</p><p>The Unity scene allows users to fly around and inspect the details of the city in a floating underwater Van,&nbsp;colliding with Buildings and updating&nbsp;NavMesh paths upon obstruction of AI routes.</p><p>​</p><p>Features:</p><ul><li><p>L-System generated Road and City structure</p></li><li><p>Real-Time NavMesh building for various City sizes</p></li><li><p>Dynamic NavMesh on obstruction</p></li><li><p>Procedural Terrain and Waves using Perlin Noise</p></li><li><p>Building and Landscape overlap handler</p></li><li><p>Custom Models and Animations</p></li></ul>",
@@ -129,6 +137,7 @@
       "id": 9,
       "title": "VR Gesture based NPC Interaction",
       "tagline": "Final Year University Project investigating the effect of VR Gestures and NPC interactions on Player Presence.",
+      "category": "game",
       "tools": ["C#", "Unity​"],
       "links": [],
       "description": "<p>This is my final year&nbsp;project which aims to understand Player presence using a gesture-based Non-Player Character (NPC) interaction system in a Virtual Reality setting.</p><p>By implementing a dynamic Pleasure-Arousal-Dominance (PAD) based interaction system, an NPC can imitate temperament throughout Player-NPC interactions and influence the sense of presence a player can feel during a play session.</p><p>&nbsp;</p><p>This project implements such&nbsp;systems using predefined gestures using the AirSig gesture recognition API and a VR controller to detect gestures performed by the Player, while&nbsp;determining how the&nbsp;NPC&nbsp;should &#39;feel&#39; or react towards the performed action.</p><p>&nbsp;</p><p>The system looks to compliment the common &#39;Dialogue System&#39; found in many existing games by providing an additional dimension to NPC interaction.&nbsp;For example, an NPC would feel anger towards a Player who has previously carried out aggressive gestures during an interaction, regardless of whether the Player also selected a &#39;positive&#39; or &#39;friendly&#39;&nbsp;dialogue option.</p><p>​</p><p>Note: While this project also benefits a common &#39;Dialogue System&#39;, the decision was made to omit&nbsp;this additional feature due to falling outside of the project&#39;s original scope - that being Player Presence.</p><p>​</p><p>Features:</p><ul><li><p>Player gesture recognition</p></li><li><p>Pleasure-Arousal-Dominance (PAD) model based temperament system</p></li><li><p>PAD value monitor</p></li><li><p>Dynamic temperament Materials and Animation trees</p></li><li><p>NPC gesture based dialogue responses</p></li><li><p>Comparison scenes (generic walking NPC and intractable NPC)</p></li><li><p>Boredom influence during interaction-less interactions.</p></li></ul>",
@@ -141,6 +150,7 @@
       "id": 10,
       "title": "Moon Base Orion (VR Narrative-driven Stealth Prototype)",
       "tagline": "A VR narrative-driven stealth prototype set on the Moon in the distant future.",
+      "category": "game",
       "tools": ["C#", "Unity", "Blender"],
       "links": [],
       "description": "<p class=\"font_8\">Moon Base Orion a narrative-driven Stealth based Virtual Reality protoype set on a futuristic Moon Base. We're pushing to create Stealth mechanics that <em>feel</em> good and challenging without feeling unfair or frustrating for the player.&nbsp;</p><p class=\"font_8\">While we're focusing on making a Stealth game that's not to say you can't start or fight your way out of a battle. Both styles of play aim to have their own balanced challenges so you may favour one style over another when a situation changes.</p><p class=\"font_8\"><br></p><p class=\"font_8\">Plot wise we're still working on a unique narrative and still have a way to go to having something conclusive - we're very early on after all - but with the foundation laid it is essential to why you're on the Base in the first place and why it's primarily a Stealth game.</p><p class=\"font_8\"><br></p><p class=\"font_8\">Please find screenshots and detailed information about mechanics I've created and worked in this game, as well as any released demonstration videos we have released.</p>",
@@ -153,6 +163,7 @@
       "id": 11,
       "title": "Quasar:  Space Boids",
       "tagline": "A C++ based networked space game featuring a Boids algorithm.",
+      "category": "game",
       "tools": ["C++", "Urho3D", "Multiplayer"],
       "links": [],
       "description": "<p>Quasar is a University assessment which assessed our flexibility to develop games using C++, implement Boids as a central game mechanic, understand the&nbsp;basics of game networking, and develop games&nbsp;using third-party game engines&nbsp;- specifically Urho3D.</p><p>​</p><p>A simple Boid algorithm is used to create &#39;swarms&#39; of enemy ships and performance optimisation has been implemented to maintain playable frame rates with hundreds of Boids via Grouping (groups of X Boids) and Splitting (updating two halves of&nbsp;the Boids&nbsp;on seperate frames).</p><p>​</p><p>The local network portion of this assessment allows for multiple Players to join and play the game together in the same instance.</p><p>​</p><p>This assessment was crucial in understanding game development with C++ and third-party engines.</p><p>​</p><p>Features:</p><ul><li><p>Player Ship control</p></li><li><p>Boid Ship enemies</p></li><li><p>Dynamic Menu/Pause Screen</p></li><li><p>Imported Models and Textures</p></li><li><p>Basic local multiplayer capabilities</p></li><li><p>Custom Animations</p></li><li><p>Custom Particle Effects</p></li><li><p>Height-mapped Terrain</p></li></ul>",
@@ -165,6 +176,7 @@
       "id": 12,
       "title": "Persona 5 Day Progressor + Load System",
       "tagline": "Recreating the Day Progression and a similar Scene Loading system as the one in Persona 5.",
+      "category": "game",
       "tools": ["C#", "Unity"],
       "links": [],
       "description": "<p class=\"font_8\">Here I recreating the Day Progression and a similar Scene Loading system as the one in Persona 5.</p><p class=\"font_8\"><br></p><p class=\"font_8\">You can see the process in <a href=\"https://youtu.be/0d4GKrTTbPA\"><u>this</u></a> video.&nbsp;</p>",
@@ -177,6 +189,7 @@
       "id": 13,
       "title": "Android App: 'Game Garage'",
       "tagline": "An Android App which provide game information developed using Android Studio.",
+      "category": "app",
       "tools": [
         "Java",
         "Android Studio",
@@ -197,6 +210,7 @@
       "id": 14,
       "title": "Sci-Fi Pistol",
       "tagline": "A Sci-Fi Pistol complete with Textures, Rig, and simple Animation.",
+      "category": "model",
       "tools": [
           "Blender", 
           "Aseprite"
@@ -212,6 +226,7 @@
       "id": 15,
       "title": "Sci-Fi Pistol Ammo Clip",
       "tagline": "A Sci-Fi Ammo Clip for the Pistol, complete with a rig and animation.",
+      "category": "model",
       "tools": [
           "Blender", 
           "Aseprite"
@@ -226,6 +241,7 @@
     {
       "id": 16,
       "tagline": "My first Blender rendered scene used to create and test modular game assets, also made by me.",
+      "category": "model",
       "title": "Sci-Fi Space Station",
       "tools": [
           "Blender"
@@ -240,6 +256,7 @@
     {
       "id": 17,
       "tagline": "My first proper sculpted model in Blender.",
+      "category": "model",
       "title": "Orc Sculpt",
       "tools": [
           "Blender"
