@@ -2,6 +2,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import ImageHeaderCard from "@/components/ImageHeaderCard";
 import Link from "next/link";
 import projectsFile from "public/projects.json";
+import { parseCategoryIcon } from "@/utilities/project-utils";
 
 export default function projects() {
     const projects = projectsFile.projects;
@@ -13,12 +14,12 @@ export default function projects() {
                     <Breadcrumb />
                 </div>
 
-                <div className="grid gap-5 grid-cols-1 md:grid-cols-3 xl:gap-6 xl:grid-cols-4">
+                <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
                     {projects.map(function (project, index) {
                         return (
                             <Link key={index} href={"/projects/" + project.id}>
-                                <ImageHeaderCard imageSrc={project.headerImage ?? "/images/characters/lilal.webp"}>
-                                    <h1>{project.title}</h1>
+                                <ImageHeaderCard imageSrc={project.headerImage ?? "/images/characters/lilal.webp"} cardHeaderIcon={parseCategoryIcon(project.category)}>
+                                    <h2>{project.title}</h2>
                                     <p>{project.tagline}</p>
                                 </ImageHeaderCard>
                             </Link>
