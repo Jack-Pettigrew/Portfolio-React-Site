@@ -6,6 +6,17 @@ import { parseCategoryIcon } from "@/utilities/project-utils";
 
 export default function projects() {
     const projects = projectsFile.projects;
+    const projectsCategorised: { [key: string]: { [key: string]: any } } = {};
+
+    for (const key in projects) {
+        if (projects.hasOwnProperty(key)) {
+            const category = projects[key].category;
+            if (!projectsCategorised[category]) {
+                projectsCategorised[category] = {};
+            }
+            projectsCategorised[category][key] = projects[key];
+        }
+    }
 
     return (
         <div className="flex flex-col items-center">
@@ -14,19 +25,31 @@ export default function projects() {
                     <Breadcrumb />
                 </div>
 
-                <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
-                    {projects.map(function (project, index) {
+                <div className="flex flex-col gap-10">
+                    {Object.values(projectsCategorised).map(function (category, categoryIndex) {
+                        const projectCategpry = Object.keys(projectsCategorised)[categoryIndex] + "s";
+
                         return (
-                            <Link key={index} href={"/projects/" + project.id}>
-                                <ImageHeaderCard imageSrc={project.headerImage ?? "/images/characters/lilal.webp"} cardHeaderIcon={parseCategoryIcon(project.category)}>
-                                    <h2>{project.title}</h2>
-                                    <p>{project.tagline}</p>
-                                </ImageHeaderCard>
-                            </Link>
+                            <div id={projectCategpry}>
+                                <h1 className="mb-3">{projectCategpry}</h1>
+
+                                <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
+                                    {Object.values(category).map(function (project, index) {
+                                        return (
+                                            <Link key={index} href={"/projects/" + project.id}>
+                                                <ImageHeaderCard imageSrc={project.headerImage ?? "/images/characters/lilal.webp"} cardHeaderIcon={parseCategoryIcon(project.category)}>
+                                                    <h2>{project.title}</h2>
+                                                    <p>{project.tagline}</p>
+                                                </ImageHeaderCard>
+                                            </Link>
+                                        );
+                                    })}
+                                </div>
+                            </div>
                         )
                     })}
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
