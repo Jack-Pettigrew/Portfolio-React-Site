@@ -19,12 +19,12 @@ export default function Breadcrumb({ customPageName, customPageNameMaxWords = 6 
     return (
         <>
             <div className="flex gap-1 items-center">
-                <Link href="/"><House size={16} weight="fill" className="duration-200 text-purple-400 hover:text-purple-700" /></Link>
+                <Link href="/"><House size={16} weight="fill" className="duration-200 text-purple-400 dark:text-purple-200 dark:hover:text-purple-400 hover:text-purple-700" /></Link>
                 {breadcrumb.length > 0 && breadcrumb.map((path, index) => {
                     return (<p key={index} className="flex gap-1 items-center">
-                        <CaretRight size={16} weight="bold" />
+                        <CaretRight size={16} weight="bold" className="dark:text-white" />
                         {breadcrumb.length - 1 == index ?
-                            (<span className="font-bold text-purple-700">{customPageName ?? path.charAt(0).toUpperCase() + path.slice(1)}</span>)
+                            (<span className="font-bold text-purple-700 dark:text-purple-400">{customPageName ?? path.charAt(0).toUpperCase() + path.slice(1)}</span>)
                             :
                             (<Link href={"/" + path} className="duration-200 text-purple-400 hover:text-purple-700"><span className="font-bold">{path.charAt(0).toUpperCase() + path.slice(1)}</span></Link>)
                         }
