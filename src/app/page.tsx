@@ -59,14 +59,14 @@ export default function index() {
                         <p>
                             Developing various{" "}
                             <Link
-                                href="/games"
+                                href="/projects#games"
                                 className="font-bold duration-[200ms] underline underline-offset-4 decoration-wavy decoration-[#bc59fd] hover:text-[#bc59fd] hover:decoration-[#dcb9fa]"
                             >
                                 games
                             </Link>{" "}
                             and other{" "}
                             <Link
-                                href="/apps"
+                                href="/projects#apps"
                                 className="font-bold duration-[200ms] underline underline-offset-4 decoration-wavy decoration-[#bc59fd] hover:text-[#bc59fd] hover:decoration-[#dcb9fa]"
                             >
                                 interesting projects

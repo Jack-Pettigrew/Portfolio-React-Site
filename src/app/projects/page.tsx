@@ -25,13 +25,23 @@ export default function projects() {
                     <Breadcrumb />
                 </div>
 
-                <div className="flex flex-col gap-10">
+                <div className="flex flex-col gap-5 dark:text-white">
+                    <div className="bg-slate-300 dark:bg-slate-700 dark:text-white p-3 rounded-xl flex gap-3">
+                    {Object.keys(projectsCategorised).map(function (category, categoryIndex) {
+                        return (
+                            <a href={"#" + category + "s"} className="hover:text-purple-400">
+                                {category + "s"}
+                            </a>
+                        );
+                    })}
+                    </div>
+                    
                     {Object.values(projectsCategorised).map(function (category, categoryIndex) {
-                        const projectCategpry = Object.keys(projectsCategorised)[categoryIndex] + "s";
+                        const projectCategory = Object.keys(projectsCategorised)[categoryIndex] + "s";
 
                         return (
-                            <div id={projectCategpry}>
-                                <h1 className="mb-3">{projectCategpry}</h1>
+                            <div id={projectCategory} key={categoryIndex} className="scroll-m-10">
+                                <h1 className="mb-3">// {projectCategory}</h1>
 
                                 <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
                                     {Object.values(category).map(function (project, index) {
