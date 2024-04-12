@@ -3,6 +3,7 @@ import ImageHeaderCard from "@/components/ImageHeaderCard";
 import Link from "next/link";
 import projectsFile from "public/projects.json";
 import { parseCategoryIcon } from "@/utilities/project-utils";
+import { Signpost } from "@phosphor-icons/react/dist/ssr/Signpost";
 
 export default function projects() {
     const projects = projectsFile.projects;
@@ -26,22 +27,28 @@ export default function projects() {
                 </div>
 
                 <div className="flex flex-col gap-5 dark:text-white">
-                    <div className="bg-slate-300 dark:bg-slate-700 dark:text-white p-3 rounded-xl flex gap-3">
-                    {Object.keys(projectsCategorised).map(function (category, categoryIndex) {
-                        return (
-                            <a href={"#" + category + "s"} className="hover:text-purple-400">
-                                {category + "s"}
-                            </a>
-                        );
-                    })}
+                    <div className="flex items-center gap-5">
+                        <div className="p-3 bg-slate-100 rounded-full">
+                            <Signpost size={22} weight="bold" />
+                        </div>
+                        <div className="bg-slate-100 dark:bg-slate-700 dark:text-white p-3 rounded-xl flex justify-around md:justify-start gap-3 w-full ">
+                            {Object.keys(projectsCategorised).map(function (category, categoryIndex) {
+                                return (
+                                    <a href={"#" + category + "s"} className="hover:text-purple-400">
+                                        {"#" + category + "s"}
+                                    </a>
+                                );
+                            })}
+                        </div>
                     </div>
-                    
+
+
                     {Object.values(projectsCategorised).map(function (category, categoryIndex) {
                         const projectCategory = Object.keys(projectsCategorised)[categoryIndex] + "s";
 
                         return (
-                            <div id={projectCategory} key={categoryIndex} className="scroll-m-10">
-                                <h1 className="mb-3">// {projectCategory}</h1>
+                            <div id={projectCategory} key={categoryIndex} className="scroll-m-[6rem] md:scroll-m-[4rem]">
+                                <h2 className="text-white mb-3 bg-purple-500 p-3 rounded-xl shadow-default">// {projectCategory}</h2>
 
                                 <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
                                     {Object.values(category).map(function (project, index) {
