@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-primary: 168 85 247;
+    /* ... */
+  }
+}
+
 h1 {
   font-size: 1.75rem;
   font-weight: 500;

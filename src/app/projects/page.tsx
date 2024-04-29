@@ -48,7 +48,7 @@ export default function projects() {
 
                         return (
                             <div id={projectCategory} key={categoryIndex} className="scroll-m-[6rem] md:scroll-m-[4rem]">
-                                <h2 className="text-white mb-3 bg-purple-500 p-3 rounded-xl shadow-default">// {projectCategory}</h2>
+                                <h2 className="text-white mb-3 bg-color-primary p-3 rounded-xl shadow-default">// {projectCategory}</h2>
 
                                 <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
                                     {Object.values(category).map(function (project, index) {
