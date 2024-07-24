@@ -62,7 +62,7 @@ export default function ImageGallery({ images = [], videos = [], youtubeVideoIds
                         mediaCount++;
                         return (
                             <div key={index} className={mediaCount == 0 ? 'lg:row-span-2 lg:col-span-2' : ''}>
-                                <video controls controlsList='nodownload' className='w-full h-full aspect-vide rounded-xl'>
+                                <video controls controlsList='nodownload' className='w-full h-full aspect-vide rounded-xl' preload='metadata'>
                                     <source src={element} />
                                 </video>
                             </div>
