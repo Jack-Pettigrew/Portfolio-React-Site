@@ -32,7 +32,7 @@ export default function index({ params }: { params: { id: number } }) {
             <div className="flex flex-col gap-3 p-5 w-full max-w-[1200px]">
                 <Breadcrumb customPageName={project.title} />
                 {/* Header */}
-                <div id="project-header" className={project.headerImage ? "relative flex h-[300px] lg:h-[250px]" : ""}>
+                <div id="project-header" className={project.headerImage ? "relative flex h-[300px] lg:h-[250px] duration-200 hover:xl:h-[500px]" : ""}>
                     {project.headerImage && <Image src={project.headerImage} fill={true} alt="Project header image" className=" object-cover object-center rounded-xl" priority />}
 
                     <div className={project.headerImage ? " m-2 px-3 py-2 self-end text-bottom text-white bg-black/20 rounded-xl backdrop-blur-lg" : ""}>
