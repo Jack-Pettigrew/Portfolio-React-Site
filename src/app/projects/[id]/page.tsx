@@ -45,16 +45,19 @@ export default function index({ params }: { params: { id: number } }) {
                 <div className="flex flex-col lg:flex-row gap-2">
                     {/*  Sidebar */}
                     <div className="flex flex-col gap-2">
-                        <Card id="links" className="h-fit lg:w-48 shrink-0">
-                            <h2>Links</h2>
-                            {project.links.map(function (element, index) {
-                                return (
-                                    <p key={index} className="text-sm font-normal"><a href={element.href} className="text-purple-500 hover:text-purple-700" target="_blank">
-                                        {element.name}
-                                    </a></p>
-                                )
-                            })}
-                        </Card>
+
+                        {project.links.length > 0 &&
+                            <Card id="links" className="h-fit lg:w-48 shrink-0">
+                                <h2>Links</h2>
+                                {project.links.map(function (element, index) {
+                                    return (
+                                        <p key={index} className="text-sm font-normal"><a href={element.href} className="text-purple-500 hover:text-purple-700" target="_blank">
+                                            {element.name}
+                                        </a></p>
+                                    )
+                                })}
+                            </Card>
+                        }
 
                         <Card id="tools" className="h-fit lg:w-48 shrink-0">
                             <h2>Tools</h2>
