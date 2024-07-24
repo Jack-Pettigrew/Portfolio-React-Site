@@ -55,7 +55,7 @@ export default function index() {
                         </p>
                     </ImageHeaderCard>
 
-                    <ImageHeaderCard imageSrc="/images/actionshot.jpg" cardHeaderIcon="⌨️">
+                    <ImageHeaderCard imageSrc="/projects/i_made_mr_x/RE2_AI_BT_Banner.webp" cardHeaderIcon="⌨️">
                         <p>
                             Developing various{" "}
                             <Link
