@@ -2,6 +2,7 @@
   "projects": [
     {
       "id": 1,
+      "order": 1,
       "title": "RE2 Mr. X AI Study - Behaviour Trees",
       "tagline": "A video game AI study recreating the Mr X stalker system from Resident Evil 2 Remake (2019)",
       "category": "game",
@@ -44,6 +45,7 @@
     },
     {
       "id": 2,
+      "order": null,
       "title": "Kings Vs Snakes (Legacy)",
       "tagline": "My first University game development assignment used to learn the basics of Unity.",
       "category": "game",
@@ -59,6 +61,7 @@
     },
     {
       "id": 3,
+      "order": null,
       "title": "PHYSX SIMULATION: Medieval Rugby",
       "tagline": "A phyiscs-based Medieval Rugby prototype using the PhysX SDK.",
       "category": "game",
@@ -74,6 +77,7 @@
     },
     {
       "id": 4,
+      "order": 3,
       "title": "BitBoy: Out of Control",
       "tagline": "BitBoy: Out of Control is a Third-Person Action Platformer where you must save the System that's 'out of control'.",
       "category": "game",
@@ -94,6 +98,7 @@
     },
     {
       "id": 5,
+      "order": 2,
       "title": "I made Fall Guys with Multiplayer (Over 24 Hours)",
       "tagline": "I challenged myself to recreate Fall Guys in 24 Hours.",
       "category": "game",
@@ -111,6 +116,7 @@
     },
     {
       "id": 6,
+      "order": 8,
       "title": "VR Oculus Quest Dev",
       "tagline": "A project dedicated to studying VR Development on Oculus Quest.",
       "category": "game",
@@ -127,6 +133,7 @@
     },
     {
       "id": 7,
+      "order": 7,
       "title": "Kings Vs Snakes",
       "tagline": "A personal project developing an open-world instalment of my Kings vs Snakes series.",
       "category": "game",
@@ -144,6 +151,7 @@
     },
     {
       "id": 8,
+      "order": 5,
       "title": "Procedural Underwater City",
       "tagline": "Procedural Content Generated underwater city.",
       "category": "game",
@@ -159,6 +167,7 @@
     },
     {
       "id": 9,
+      "order": 9,
       "title": "VR Gesture based NPC Interaction",
       "tagline": "Final Year University Project investigating the effect of VR Gestures and NPC interactions on Player Presence.",
       "category": "game",
@@ -176,6 +185,7 @@
     },
     {
       "id": 10,
+      "order": 6,
       "title": "Moon Base Orion (VR Narrative-driven Stealth Prototype)",
       "tagline": "A VR narrative-driven stealth prototype set on the Moon in the distant future.",
       "category": "game",
@@ -195,6 +205,7 @@
     },
     {
       "id": 11,
+      "order": null,
       "title": "Quasar:  Space Boids",
       "tagline": "A C++ based networked space game featuring a Boids algorithm.",
       "category": "game",
@@ -210,6 +221,7 @@
     },
     {
       "id": 12,
+      "order": 4,
       "title": "Persona 5 Day Progressor + Load System",
       "tagline": "Recreating the Day Progression and a similar Scene Loading system as the one in Persona 5.",
       "category": "game",
@@ -227,6 +239,7 @@
     },
     {
       "id": 13,
+      "order": null,
       "title": "Android App: 'Game Garage'",
       "tagline": "An Android App which provide game information developed using Android Studio.",
       "category": "app",
@@ -250,6 +263,7 @@
     },
     {
       "id": 14,
+      "order": null,
       "title": "Sci-Fi Pistol",
       "tagline": "A Sci-Fi Pistol complete with Textures, Rig, and simple Animation.",
       "category": "model",
@@ -269,6 +283,7 @@
     },
     {
       "id": 15,
+      "order": null,
       "title": "Sci-Fi Pistol Ammo Clip",
       "tagline": "A Sci-Fi Ammo Clip for the Pistol, complete with a rig and animation.",
       "category": "model",
@@ -290,6 +305,7 @@
     },
     {
       "id": 16,
+      "order": null,
       "tagline": "My first Blender rendered scene used to create and test modular game assets, also made by me.",
       "category": "model",
       "title": "Sci-Fi Space Station",
@@ -309,6 +325,7 @@
     },
     {
       "id": 17,
+      "order": null,
       "tagline": "My first proper sculpted model in Blender.",
       "category": "model",
       "title": "Orc Sculpt",
