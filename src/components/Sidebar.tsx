@@ -59,7 +59,7 @@ export default function Sidebar() {
                     {/* <CardLinks title="Games" href="/games" /> */}
                     <CardLinks title="Home" href="/" />
                     <CardLinks title="Projects" href="/projects" />
-                    <CardLinks title="YouTube" href="/youtube" />
+                    {/* <CardLinks title="YouTube" href="/youtube" /> */}
                     {/* <CardLinks title="Other" href="/other" /> */}
                 </div>
 
@@ -71,7 +71,7 @@ export default function Sidebar() {
 
             {/* Tagline */}
             <div className='flex pt-5'>
-                <p className='hover:animate-pulse'>Powered by Coffee <span className='text-2xl pl-1'>☕️</span></p>
+                <p className='animate-pulse'>Powered by Coffee <span className='text-2xl pl-1'>☕️</span></p>
             </div>
         </aside>
     );
