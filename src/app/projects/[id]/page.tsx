@@ -82,7 +82,22 @@ export default function index({ params }: { params: { id: number } }) {
                             </div>
                         </Card>
 
-                        <ImageGallery images={project.images} videos={project.videos} youtubeVideoIds={project.youtubeVideoIds} />
+                        {project.youtubeVideoIds.length > 0 && <>
+                        <h2>YouTube Videos</h2>
+
+                            <div className="grid gap-2 grid-cols-4">
+                                {
+                                    project.youtubeVideoIds.map(function (element, index) {
+                                        return (
+                                            <iframe key={index} className={'row-span-2 col-span-2 rounded-xl w-full h-96 md:h-full'} src={"https://www.youtube.com/embed/" + element} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                                        );
+                                    })
+                                }
+                            </div>
+                        </>}
+
+                        <h2 className="mt-3">Gallery</h2>
+                        <ImageGallery images={project.images} videos={project.videos} />
                     </div>
                 </div>
             </div>

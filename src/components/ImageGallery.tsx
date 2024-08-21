@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import ImageViewer from './ImageViewer';
 import Image from 'next/image';
 
-export default function ImageGallery({ images = [], videos = [], youtubeVideoIds = [] }: { images?: Array<string>, videos?: Array<string>, youtubeVideoIds?: Array<string> }) {
+export default function ImageGallery({ images = [], videos = [] }: { images?: Array<string>, videos?: Array<string>}) {
     const [imageIndex, setImageIndex] = useState(0);
     const [cachedImages, setCachedImages] = useState<{[key:string]:string}>({});
     const [viewerVisibility, setViewerVisibility] = useState(false);
@@ -49,20 +49,11 @@ export default function ImageGallery({ images = [], videos = [], youtubeVideoIds
         <>
             <div id="image-carousel" className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 {
-                    youtubeVideoIds.map(function (element, index) {
-                        mediaCount++;
-                        return (
-                            <iframe key={index} className={(mediaCount == 0 ? 'lg:row-span-2 lg:col-span-2' : '') + ' rounded-xl w-full h-96 md:h-full'} src={"https://www.youtube.com/embed/" + element} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                        );
-                    })
-                }
-
-                {
                     videos.map(function (element, index) {
                         mediaCount++;
                         return (
                             <div key={index} className={mediaCount == 0 ? 'lg:row-span-2 lg:col-span-2' : ''}>
-                                <video controls controlsList='nodownload' className='w-full h-full aspect-vide rounded-xl' preload='metadata'>
+                                <video controls controlsList='nodownload' className='w-full h-full aspect-video rounded-xl' preload='metadata'>
                                     <source src={element} />
                                 </video>
                             </div>
