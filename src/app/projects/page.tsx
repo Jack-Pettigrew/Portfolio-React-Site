@@ -6,17 +6,28 @@ import { parseCategoryIcon } from "@/utilities/project-utils";
 import { Signpost } from "@phosphor-icons/react/dist/ssr/Signpost";
 
 export default function projects() {
-    const projects = projectsFile.projects;
-    const projectsCategorised: { [key: string]: { [key: string]: any } } = {};
-
-    for (const key in projects) {
-        if (projects.hasOwnProperty(key)) {
-            const category = projects[key].category;
-            if (!projectsCategorised[category]) {
-                projectsCategorised[category] = {};
-            }
-            projectsCategorised[category][key] = projects[key];
+    let projects = projectsFile.projects.sort((a, b) => {
+        if (a.order === null) {
+            return 1;
         }
+
+        if (b.order === null) {
+            return -1;
+        }
+        
+        return a.order - b.order;
+    });
+
+    const projectsCategorised: { [key: string]: any[] } = {};
+
+    for (const project of projects) {
+        const category = project.category;
+    
+        if (!projectsCategorised[category]) {
+            projectsCategorised[category] = [];
+        }
+    
+        projectsCategorised[category].push(project);
     }
 
     return (
@@ -34,7 +45,7 @@ export default function projects() {
                         <div className="bg-slate-100 dark:bg-slate-700 dark:text-white p-3 rounded-xl flex justify-around md:justify-start gap-3 w-full ">
                             {Object.keys(projectsCategorised).map(function (category, categoryIndex) {
                                 return (
-                                    <a href={"#" + category + "s"} className="hover:text-purple-400">
+                                    <a key={categoryIndex} href={"#" + category + "s"} className="hover:text-purple-400">
                                         {"#" + category + "s"}
                                     </a>
                                 );
@@ -53,7 +64,7 @@ export default function projects() {
                                 <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
                                     {Object.values(category).map(function (project, index) {
                                         return (
-                                            <Link key={index} href={"/projects/" + project.id}>
+                                            <Link key={project.id} href={"/projects/" + project.id}>
                                                 <ImageHeaderCard imageSrc={project.headerImage ?? "/images/characters/lilal.webp"} cardHeaderIcon={parseCategoryIcon(project.category)}>
                                                     <h2>{project.title}</h2>
                                                     <p>{project.tagline}</p>

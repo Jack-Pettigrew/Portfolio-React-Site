@@ -14,14 +14,13 @@ export const dynamicParams = false;
 
 // Gerenate static project pages at build time
 export async function generateStaticParams() {
-    return projectsFile.projects.map((ticket) => ({
-        id: ticket.id.toString()
+    return projectsFile.projects.map((project) => ({
+        id: project.id.toString()
     }))
 }
 
 export default function index({ params }: { params: { id: number } }) {
-    const id = params.id;
-    const project = projectsFile.projects[id - 1];
+    const project = projectsFile.projects.find((project) => project.id.toString() === params.id.toString());
 
     if (project == undefined) {
         notFound();
