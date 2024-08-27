@@ -6,16 +6,7 @@ import { parseCategoryIcon } from "@/utilities/project-utils";
 import { Signpost } from "@phosphor-icons/react/dist/ssr/Signpost";
 
 export default function projects() {
-    const projects = projectsFile.projects.sort((a, b) => {
-        if (a.order === null || b.order === null) {
-            if (a.order === null && b.order !== null) return 1;
-            if (a.order !== null && b.order === null) return -1;
-            return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
-        }
-
-        return a.order < b.order ? -1 : a.order > b.order ? 1 : 0;
-    });
-
+    const projects = projectsFile.projects;
     const projectsCategorised: { [key: string]: { [key: string]: any } } = {};
 
     for (const key in projects) {
