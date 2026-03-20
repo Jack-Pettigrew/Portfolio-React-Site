@@ -23,7 +23,7 @@ export default function WhatImWorkingOn({ children, projectImageRoute, projectLi
                         </div>
 
                         <div className="relative flex bg-black w-80 h-full overflow-hidden">
-                            <Image src={projectImageRoute} fill={true} placeholder="empty" alt="Most recent work image" className="object-cover object-top" />
+                            <Image src={projectImageRoute} fill={true} placeholder="empty" alt="Most recent work image" className="object-cover object-center" />
                         </div>
                     </div>
                 </Link>
